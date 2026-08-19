@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanskruti Pawase · UX &amp; Brand Designer</title>
+<meta name="description" content="Portfolio of Sanskruti Pawase. UX/UI and brand designer. Read a case study, earn a flower. Explore it all, grow a garden.">
+<meta name="theme-color" content="#FDFCFA">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sanskruti Pawase · UX &amp; Brand Designer">
+<meta property="og:description" content="Five case studies, five flowers. Research-led UX and brand design, with the full method behind every decision.">
+<!-- AFTER DEPLOYING: change the two og/twitter image lines below to your full URL,
+     e.g. https://sanskrutipawase.vercel.app/assets/og-cover.jpg
+     LinkedIn and X need an absolute URL to show the preview card. -->
+<meta property="og:image" content="assets/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sanskruti Pawase · UX &amp; Brand Designer">
+<meta name="twitter:description" content="Five case studies, five flowers. Research-led UX and brand design, with the full method behind every decision.">
+<meta name="twitter:image" content="assets/og-cover.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg transform='translate(50,50)'%3E%3Cg fill='%23FFF8E6' stroke='%23E8DCB8'%3E%3Cellipse rx='8' ry='24' cy='-16'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(45)'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(90)'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(135)'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(180)'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(225)'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(270)'/%3E%3Cellipse rx='8' ry='24' cy='-16' transform='rotate(315)'/%3E%3C/g%3E%3Ccircle r='12' fill='%23E8B84B'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FDFCFA;
+  --cream-2:#F6F3EC;
+  --card:#FFFFFF;
+  --ink:#2B2B24;
+  --ink-soft:#6B6558;
+  --green:#2E4B3F;
+  --green-mid:#5F7F5B;
+  --sage:#9CAF88;
+  --blush:#E8B4B8;
+  --terracotta:#D97C5A;
+  --gold:#E8B84B;
+  --lav:#A48BC4;
+  --sky:#7B9ECF;
+  --line:#E9E4D6;
+  --radius:20px;
+  --maxw:1140px;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.65;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:rgba(95,127,91,.18);-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;margin:0;}
+img{max-width:100%;}
+a{color:inherit;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+
+::selection{background:var(--sage);color:#fff;}
+/* keyboard focus, visible for anyone tabbing through */
+:focus-visible{outline:3px solid var(--green-mid);outline-offset:3px;border-radius:6px;}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--green);color:#fff;padding:12px 20px;border-radius:0 0 12px 0;font-size:14px;font-weight:700;text-decoration:none;}
+.skip:focus{left:0;}
+
+/* ---------- reveal on scroll ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease, transform .8s cubic-bezier(.22,.8,.35,1);}
+.reveal.in{opacity:1;transform:none;}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:80;background:rgba(253,252,250,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s;}
+nav.scrolled{border-color:var(--line);}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;}
+.brand{font-family:var(--serif);font-weight:700;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:9px;}
+.brand svg{width:22px;height:22px;}
+.navlinks{display:flex;gap:6px;font-size:13.5px;font-weight:600;align-items:center;}
+.navlinks a{text-decoration:none;opacity:.78;transition:.25s;position:relative;display:flex;align-items:center;gap:7px;padding:8px 14px;border-radius:100px;}
+.navlinks a .nl-ic{font-size:15px;line-height:1;transition:transform .3s;}
+.navlinks a:hover{opacity:1;color:var(--green);background:var(--cream-2);}
+.navlinks a:hover .nl-ic{transform:rotate(-12deg) scale(1.18);}
+.navlinks a.active{opacity:1;color:var(--green);background:var(--cream-2);box-shadow:inset 0 0 0 1.5px var(--sage);}
+/* nav bouquet: the flower collector */
+.growth{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:600;color:var(--ink-soft);cursor:pointer;background:var(--card);border:1.5px solid var(--sage);border-radius:100px;padding:5px 16px 5px 8px;transition:.25s;box-shadow:0 6px 18px -8px rgba(46,75,63,.28);font-family:var(--sans);text-align:left;}
+.growth:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px rgba(46,75,63,.4);border-color:var(--green-mid);}
+.growth svg{width:42px;height:48px;overflow:visible;flex:none;}
+.growth .pct b{display:block;font-size:14px;color:var(--green);font-family:var(--serif);line-height:1.1;}
+.growth.pop{animation:pop .5s ease;}
+.growth.attn svg{animation:nudge 4.5s ease-in-out infinite;transform-origin:bottom center;}
+@keyframes nudge{0%,86%,100%{transform:none}90%{transform:rotate(-7deg) scale(1.08)}95%{transform:rotate(6deg) scale(1.04)}}
+.nav-bloom{transition:opacity .6s ease, filter .6s ease;}
+.nav-bloom.off{opacity:.16;filter:grayscale(1);}
+@media(max-width:860px){
+  nav .wrap{padding:8px 14px;}
+  .brand span{display:none;}
+  .navlinks{gap:0;}
+  .navlinks a{padding:8px 9px;}
+  .navlinks a .nl-txt{display:none;}
+  .navlinks a .nl-ic{font-size:19px;}
+  .growth{padding:4px 10px 4px 6px;}
+  .growth .pct > span{display:none;}
+}
+
+/* ---------- HERO + PAINTED SKY ---------- */
+.hero{position:relative;padding:150px 0 110px;overflow:hidden;}
+.sky{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(180deg,#CDE7F7 0%,#DFF0FA 38%,#F2F8FB 70%,#FDFCFA 100%);}
+.sun{position:absolute;top:5%;right:10%;width:250px;height:250px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,242,200,1) 0%,rgba(255,238,190,.55) 42%,transparent 70%);
+  animation:sunbreathe 8s ease-in-out infinite;}
+.sun::after{content:"";position:absolute;inset:26%;border-radius:50%;background:radial-gradient(circle,#FFF7DE 0%,#FFEDB8 70%,transparent 100%);}
+@keyframes sunbreathe{0%,100%{transform:scale(1);opacity:.95}50%{transform:scale(1.1);opacity:1}}
+.cloud{position:absolute;filter:blur(7px);opacity:.95;animation:cloudDrift linear infinite;}
+.cloud i{position:absolute;background:#FFFFFF;border-radius:50%;display:block;box-shadow:0 6px 14px rgba(160,190,210,.25) inset;}
+@keyframes cloudDrift{from{transform:translateX(-28vw);}to{transform:translateX(118vw);}}
+.bird{position:absolute;animation:birdfly linear infinite;opacity:.7;}
+.bird svg{width:26px;height:12px;animation:birdbob 1.6s ease-in-out infinite;}
+@keyframes birdfly{from{transform:translateX(-8vw)}to{transform:translateX(112vw)}}
+@keyframes birdbob{0%,100%{transform:translateY(0) scaleY(1)}50%{transform:translateY(-5px) scaleY(.72)}}
+.hills{position:absolute;left:0;right:0;bottom:-2px;z-index:1;pointer-events:none;}
+.hills svg{display:block;width:100%;height:110px;}
+.grass-swing{transform-origin:bottom center;animation:sway 4.5s ease-in-out infinite;}
+.grass-swing.g2{animation-delay:-1.6s;animation-duration:5.4s;}
+.grass-swing.g3{animation-delay:-2.9s;animation-duration:3.9s;}
+@keyframes sway{0%,100%{transform:rotate(-3.5deg)}50%{transform:rotate(3.5deg)}}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;position:relative;z-index:2;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;font-size:11.5px;font-weight:700;padding:7px 15px;border-radius:100px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:22px;}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(38px,5.4vw,60px);line-height:1.06;margin-bottom:20px;}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--green-mid);}
+.hero p.lead{font-size:18px;color:var(--ink-soft);max-width:540px;margin:0 0 30px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:100px;font-weight:600;font-size:14px;text-decoration:none;border:1.5px solid var(--ink);transition:.25s;cursor:pointer;font-family:var(--sans);}
+.btn-solid{background:var(--ink);color:var(--cream);}
+.btn-solid:hover{background:var(--green);border-color:var(--green);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--ink);}
+.btn-outline:hover{background:var(--ink);color:var(--cream);transform:translateY(-2px);}
+.hero-scene svg{overflow:visible;}
+.hs-fl{transform-origin:center 410px;animation:growUp 1s cubic-bezier(.3,1.3,.4,1) both, sway 6s ease-in-out infinite 1.2s;}
+@keyframes growUp{from{transform:scale(.1);opacity:0}to{transform:scale(1);opacity:1}}
+.hs-seed{animation:seedFloat 9s ease-in-out infinite;}
+@keyframes seedFloat{0%,100%{transform:translate(0,0)}30%{transform:translate(14px,-20px)}65%{transform:translate(-10px,-34px)}}
+/* rotating line */
+.rotator{margin-top:44px;font-size:16px;color:var(--ink-soft);display:flex;gap:8px;flex-wrap:wrap;align-items:baseline;}
+.rotator .rot-static{font-weight:600;}
+.rot-word{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--green);display:inline-block;min-width:min(320px,70vw);animation:none;}
+.rot-word.flip{animation:rotFlip .5s ease;}
+@keyframes rotFlip{0%{opacity:0;transform:translateY(12px) rotate(-1.5deg)}100%{opacity:1;transform:none}}
+/* drifting petals */
+.petal{position:absolute;top:-40px;pointer-events:none;z-index:1;animation:drift linear infinite;opacity:.8;}
+@keyframes drift{
+  0%{transform:translateY(-5vh) translateX(0) rotate(0deg);}
+  100%{transform:translateY(110vh) translateX(60px) rotate(340deg);}
+}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;}.hero{padding-top:120px;}}
+
+/* ---------- SECTION HEADS + WAVE DIVIDERS ---------- */
+.section{padding:84px 0;position:relative;}
+.wave-top{position:absolute;top:-1px;left:0;right:0;line-height:0;pointer-events:none;}
+.wave-top svg{display:block;width:100%;height:52px;}
+.has-wave{padding-top:130px;}
+.section-head{max-width:660px;margin-bottom:48px;}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terracotta);margin-bottom:10px;display:inline-flex;align-items:center;gap:8px;}
+.kicker::before{content:"";width:26px;height:1.5px;background:var(--terracotta);display:inline-block;}
+.section-head h2{font-size:clamp(28px,3.6vw,38px);line-height:1.15;}
+.section-head p{color:var(--ink-soft);font-size:16px;margin-top:14px;}
+
+/* ---------- HELP CARDS ---------- */
+.help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.help-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;transition:transform .3s, box-shadow .3s;}
+.help-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(46,75,63,.25);}
+.help-card .ic{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px;}
+.help-card h3{font-size:19px;margin-bottom:10px;}
+.help-card p{font-size:14px;color:var(--ink-soft);margin:0;}
+@media(max-width:820px){.help-grid{grid-template-columns:1fr;}}
+
+/* ---------- GARDEN / WORK ---------- */
+#help{background:#FDFCFA;}
+#work{background:linear-gradient(180deg,#F0F6EB 0%,#E7F0E1 100%);}
+#about{background:linear-gradient(180deg,#F0F8FC 0%,#FAFCFD 100%);}
+.garden-hint{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1.5px dashed var(--sage);color:var(--green);border-radius:14px;padding:10px 18px;font-size:13.5px;font-weight:600;margin-bottom:40px;}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+.case-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:transform .35s, box-shadow .35s;display:flex;flex-direction:column;}
+.case-card:hover{transform:translateY(-7px);box-shadow:0 24px 50px -20px rgba(46,75,63,.3);}
+.case-card .cc-media{height:250px;overflow:hidden;background:var(--cream-2);position:relative;}
+.case-card .cc-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.case-card:hover .cc-media img{transform:scale(1.045);}
+
+.cc-flower{position:absolute;top:14px;right:14px;width:44px;height:44px;background:rgba(255,253,247,.92);border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);transition:.3s;}
+.cc-flower svg{width:26px;height:26px;filter:grayscale(1);opacity:.45;transition:.4s;}
+.case-card.bloomed .cc-flower svg{filter:none;opacity:1;}
+.case-card.bloomed .cc-flower{border-color:var(--sage);box-shadow:0 0 0 3px rgba(156,175,136,.25);}
+.cc-body{padding:24px 26px 26px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.cc-tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--green-mid);}
+.cc-body h3{font-size:21px;}
+.cc-body p{font-size:14px;color:var(--ink-soft);margin:0;flex:1;}
+.cc-cta{font-size:13.5px;font-weight:700;color:var(--green);display:inline-flex;align-items:center;gap:6px;margin-top:8px;}
+.cc-cta .arr{transition:transform .25s;}
+.case-card:hover .cc-cta .arr{transform:translateX(5px);}
+.case-card.wide{grid-column:1/-1;flex-direction:row;}
+.case-card.wide .cc-media{width:52%;height:auto;min-height:300px;}
+.case-card.wide .cc-body{width:48%;justify-content:center;}
+@media(max-width:860px){.case-grid{grid-template-columns:1fr;}.case-card.wide{flex-direction:column;}.case-card.wide .cc-media,.case-card.wide .cc-body{width:100%;}.case-card.wide .cc-media{height:250px;min-height:0;}}
+
+/* ---------- CASE STUDY OVERLAY ---------- */
+.overlay{position:fixed;inset:0;z-index:120;display:none;}
+.overlay.open{display:block;}
+.overlay-bg{position:absolute;inset:0;background:rgba(43,43,36,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;transition:opacity .35s;}
+.overlay.open .overlay-bg{opacity:1;}
+.overlay{padding:24px;}
+.sheet{position:absolute;inset:0;margin:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;width:min(920px,calc(100vw - 24px));height:min(90vh,1200px);height:min(90dvh,1200px);background:var(--cream);overflow-y:auto;border-radius:28px;border:1px solid var(--line);transform:translateY(52px) scale(.95);opacity:0;transition:transform .5s cubic-bezier(.25,.9,.3,1), opacity .4s;box-shadow:0 50px 110px -24px rgba(20,40,30,.5);}
+.overlay.open .sheet{transform:none;opacity:1;}
+.sheet::before{content:"";position:sticky;top:0;display:block;height:7px;background:linear-gradient(90deg,var(--terracotta),var(--gold),var(--sage),var(--sky),var(--lav),var(--blush));z-index:6;}
+.sheet-inner{padding:38px 58px 70px;}
+.cs-medal{width:72px;height:72px;border-radius:50%;background:var(--card);border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 10px 24px -12px rgba(46,75,63,.35);animation:medalIn .7s cubic-bezier(.3,1.4,.4,1);}
+@keyframes medalIn{from{transform:scale(0) rotate(-90deg)}to{transform:scale(1) rotate(0)}}
+.sheet-close{position:sticky;top:18px;margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:100px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;z-index:5;font-family:var(--sans);color:var(--ink);transition:.2s;float:right;}
+.sheet-close:hover{background:var(--ink);color:var(--cream);}
+.cs-tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green-mid);margin-bottom:12px;display:block;clear:both;}
+.sheet h2{font-size:clamp(28px,4vw,40px);line-height:1.1;margin-bottom:8px;}
+.cs-sub{color:var(--ink-soft);font-size:16px;margin-bottom:26px;}
+.cs-meta{display:flex;gap:26px;flex-wrap:wrap;padding:18px 22px;background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:38px;}
+.cs-meta div{font-size:13px;color:var(--ink-soft);}
+.cs-meta b{display:block;color:var(--ink);font-size:13.5px;margin-bottom:2px;}
+.cs-sec{margin-bottom:38px;}
+.cs-sec h3{font-size:22px;margin-bottom:12px;display:flex;align-items:center;gap:12px;}
+.cs-num{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-family:var(--sans);font-size:13px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex:none;}
+.cs-sec p{font-size:15.5px;color:#413d33;margin:0 0 12px;}
+.cs-note{background:var(--cream-2);border-left:3px solid var(--sage);border-radius:0 10px 10px 0;padding:10px 16px;font-size:13.5px !important;color:var(--ink-soft) !important;}
+.cs-sec ul{margin:0 0 12px;padding-left:20px;font-size:15.5px;color:#413d33;}
+.cs-sec li{margin-bottom:6px;}
+.cs-img{border-radius:16px;border:1px solid var(--line);margin:16px 0;display:block;background:#fff;width:100%;}
+.cs-fig{margin:22px 0;}
+.cs-fig img{margin-bottom:8px;}
+.cs-fig figcaption{font-size:12.5px;color:var(--ink-soft);line-height:1.55;padding-left:14px;border-left:2px solid var(--sage);}
+.cs-img-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0;}
+.cs-img-row img{border-radius:14px;border:1px solid var(--line);width:100%;height:100%;object-fit:cover;background:#fff;}
+.methods{display:flex;gap:9px;flex-wrap:wrap;margin-top:6px;}
+.methods span{background:var(--card);border:1px solid var(--sage);border-radius:100px;padding:6px 14px;font-size:12.5px;font-weight:600;color:var(--green);}
+/* research deep dive */
+.dd{margin:34px 0 8px;border:1.5px solid var(--sage);border-radius:20px;background:var(--card);overflow:hidden;}
+.dd-head{width:100%;display:flex;align-items:center;gap:14px;padding:20px 24px;background:none;border:none;cursor:pointer;font-family:var(--sans);text-align:left;color:var(--ink);transition:background .25s;}
+.dd-head:hover{background:var(--cream-2);}
+.dd-head .dd-ic{width:38px;height:38px;border-radius:12px;background:var(--cream-2);display:flex;align-items:center;justify-content:center;font-size:18px;flex:none;}
+.dd-head b{display:block;font-family:var(--serif);font-size:18px;}
+.dd-head span{font-size:12.5px;color:var(--ink-soft);}
+.dd-head .chev{margin-left:auto;font-size:15px;color:var(--green);transition:transform .35s;flex:none;}
+.dd.open .dd-head .chev{transform:rotate(180deg);}
+.dd-body{max-height:0;overflow:hidden;transition:max-height .55s cubic-bezier(.3,.8,.3,1);}
+.dd.open .dd-body{max-height:9000px;}
+.dd-inner{padding:4px 24px 26px;}
+.dd-phase{margin-top:22px;}
+.dd-phase>h5{font-family:var(--sans);font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--terracotta);margin:0 0 12px;display:flex;align-items:center;gap:10px;}
+.dd-phase>h5::after{content:"";flex:1;height:1px;background:var(--line);}
+.dd-m{border-left:2px solid var(--line);padding:0 0 16px 18px;position:relative;}
+.dd-m::before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--sage);border:2px solid var(--card);}
+.dd-m:last-child{padding-bottom:0;}
+.dd-m b{display:block;font-size:14.5px;color:var(--ink);margin-bottom:5px;}
+.dd-m p{font-size:13.5px;color:var(--ink-soft);margin:0 0 5px;line-height:1.6;}
+.dd-m .lbl{font-weight:700;color:var(--green);}
+.dd-note{background:var(--cream-2);border-radius:14px;padding:16px 18px;font-size:13px;color:var(--ink-soft);margin-top:20px;line-height:1.6;}
+.dd-note b{color:var(--green);}
+@media(max-width:640px){.dd-inner{padding:4px 16px 22px;}.dd-head{padding:16px;}}
+.proto-label{display:block;font-size:13.5px;font-weight:700;color:var(--green);margin-bottom:12px;}
+.proto-row{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 30px;}
+.proto-btn{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;border-radius:100px;padding:11px 22px;font-size:13.5px;font-weight:700;text-decoration:none;transition:.25s;}
+.proto-btn:hover{background:var(--terracotta);transform:translateY(-2px);}
+.proto-btn.alt{background:var(--card);color:var(--green);border:1.5px solid var(--sage);}
+.proto-btn.alt:hover{background:var(--green);color:#fff;border-color:var(--green);}
+/* inline interactive embeds */
+.embed-wrap{margin:20px 0 30px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;}
+.embed-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap;}
+.embed-head b{font-family:var(--serif);font-size:16px;}
+.embed-head .hint{font-size:12px;color:var(--ink-soft);}
+.embed-head .ext{margin-left:auto;font-size:12px;font-weight:700;color:var(--green);text-decoration:none;border:1px solid var(--sage);border-radius:100px;padding:5px 12px;transition:.2s;}
+.embed-head .ext:hover{background:var(--green);color:#fff;}
+.embed-stage{position:relative;border-radius:14px;overflow:hidden;background:var(--cream-2);}
+.embed-stage.wide{aspect-ratio:16/10;}
+.embed-stage.phone{aspect-ratio:9/17;max-width:390px;margin:0 auto;border-radius:26px;}
+.embed-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;}
+.embed-facade{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;border:0;font-family:var(--sans);background-size:cover;background-position:center;width:100%;}
+.embed-facade::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,50,43,.32),rgba(43,50,43,.62));}
+.embed-facade .play{position:relative;width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.94);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--green);box-shadow:0 10px 26px -8px rgba(0,0,0,.5);transition:transform .3s;}
+.embed-facade:hover .play{transform:scale(1.11);}
+.embed-facade span.lbl2{position:relative;color:#fff;font-size:13.5px;font-weight:700;text-shadow:0 1px 6px rgba(0,0,0,.5);}
+.embed-facade span.sub2{position:relative;color:#E4EAE2;font-size:11.5px;}
+.embed-fallback{font-size:12px;color:var(--ink-soft);text-align:center;margin-top:10px;}
+.embed-fallback a{color:var(--green);font-weight:700;}
+@media(max-width:640px){.embed-wrap{padding:14px;}.embed-stage.phone{max-width:100%;}}
+.cs-outcome{background:var(--green);color:#EDE9DC;border-radius:var(--radius);padding:34px 34px 28px;margin-top:8px;}
+.cs-outcome h3{color:#fff;font-size:22px;margin-bottom:16px;}
+.cs-outcome p{color:#DCE5D6;}
+.outcome-stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:8px;}
+.outcome-stats b{display:block;font-family:var(--serif);font-size:28px;color:var(--gold);}
+.outcome-stats span{font-size:12.5px;color:#C8D4C0;}
+.cs-earn{margin-top:34px;text-align:center;padding:30px;border:1.5px dashed var(--sage);border-radius:var(--radius);background:var(--card);}
+.cs-earn .fl{width:58px;height:58px;margin:0 auto 10px;}
+.cs-earn p{font-size:14.5px;color:var(--ink-soft);margin:0;}
+.cs-earn b{color:var(--green);}
+/* next project nav */
+.cs-nextnav{display:flex;gap:14px;margin-top:22px;}
+.cs-nextcard{flex:1;display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 20px;cursor:pointer;text-align:left;font-family:var(--sans);transition:.25s;color:var(--ink);}
+.cs-nextcard:hover{border-color:var(--sage);transform:translateY(-3px);box-shadow:0 14px 32px -16px rgba(46,75,63,.3);}
+.cs-nextcard svg{width:36px;height:36px;flex:none;}
+.cs-nextcard .nx-k{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green-mid);display:block;}
+.cs-nextcard .nx-t{font-family:var(--serif);font-size:16px;font-weight:600;display:block;line-height:1.25;}
+.cs-nextcard .nx-s{font-size:12px;color:var(--ink-soft);display:block;margin-top:2px;}
+.cs-nextcard.prev{flex:0 0 auto;max-width:38%;}
+@media(max-width:640px){.cs-nextnav{flex-direction:column;}.cs-nextcard.prev{max-width:none;}}
+@media(max-width:640px){.sheet-inner{padding:26px 22px 70px;}.cs-img-row{grid-template-columns:1fr;}}
+
+/* ---------- ABOUT ---------- */
+#about{position:relative;overflow:hidden;}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:start;position:relative;z-index:2;}
+.me-card{display:flex;align-items:center;gap:20px;margin-bottom:26px;}
+.me-card img{width:132px;height:132px;border-radius:50%;object-fit:cover;border:3px solid var(--card);box-shadow:0 8px 22px -8px rgba(46,75,63,.4);}
+.me-card b{display:block;font-family:var(--serif);font-size:22px;}
+.me-card span{font-size:14px;color:var(--ink-soft);}
+.about-copy h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:18px;}
+.about-copy p{color:var(--ink-soft);font-size:16px;margin:0 0 16px;}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;}}
+/* --- about infographics --- */
+.ig-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:34px 0 0;position:relative;z-index:2;}
+.stat-chip{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;text-align:center;transition:transform .3s;}
+.stat-chip:hover{transform:translateY(-4px);}
+.stat-chip .ic{width:40px;height:40px;background:var(--cream-2);border:1px solid var(--line);border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:19px;margin:0 auto 10px;}
+.stat-chip b{display:block;font-family:var(--serif);font-size:27px;color:var(--green);line-height:1.1;}
+.stat-chip span{font-size:12px;color:var(--ink-soft);line-height:1.4;display:block;margin-top:4px;}
+@media(max-width:860px){.ig-stats{grid-template-columns:repeat(2,1fr);}}
+.ig-cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:26px;position:relative;z-index:2;}
+@media(max-width:860px){.ig-cols{grid-template-columns:1fr;}}
+.ig-panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 28px 24px;}
+.ig-panel>h4{font-size:17px;margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.ic-chip{display:inline-flex;width:34px;height:34px;background:var(--cream-2);border:1px solid var(--line);border-radius:11px;align-items:center;justify-content:center;font-size:16px;flex:none;}
+/* timeline */
+.timeline{position:relative;padding-left:24px;display:flex;flex-direction:column;gap:18px;}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:repeating-linear-gradient(180deg,var(--sage) 0 6px,transparent 6px 11px);}
+.tl-item{position:relative;font-size:13.5px;color:var(--ink-soft);}
+.tl-item::before{content:"";position:absolute;left:-23px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--card);border:3px solid var(--green-mid);}
+.tl-item.now::before{background:var(--gold);border-color:var(--terracotta);}
+.tl-item b{display:block;color:var(--ink);font-size:14px;}
+.tl-item .yr{font-size:11px;font-weight:700;color:var(--terracotta);text-transform:uppercase;letter-spacing:.06em;}
+/* tools panel */
+.tool-note{font-size:13.5px;color:var(--ink-soft);margin:0 0 16px;line-height:1.6;}
+/* decision path */
+.decision-path{align-self:start;}
+.dp-steps{display:flex;flex-direction:column;gap:0;}
+.dp-step{display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line);align-items:flex-start;}
+.dp-step:last-child{border-bottom:none;}
+.dp-ic{font-size:21px;flex:none;width:36px;height:36px;background:var(--cream-2);border-radius:12px;display:flex;align-items:center;justify-content:center;}
+.dp-step b{display:block;font-size:14px;color:var(--ink);font-family:var(--sans);}
+.dp-step span:not(.dp-ic){font-size:12.5px;color:var(--ink-soft);line-height:1.5;}
+/* method chips reuse .methods */
+/* guide butterfly: leads the visitor down the page */
+.guide-butterfly{position:fixed;top:0;left:0;z-index:70;pointer-events:none;will-change:transform;filter:drop-shadow(0 4px 8px rgba(90,70,120,.25));}
+.guide-butterfly .wings{animation:flap .38s ease-in-out infinite alternate;transform-origin:center;}
+@keyframes flap{from{transform:scaleX(1);}to{transform:scaleX(.4);}}
+@media(max-width:700px){.guide-butterfly{display:none;}}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--green);color:#EDE9DC;padding:118px 0 40px;position:relative;overflow:hidden;}
+footer .wave-top svg path{fill:#FAFCFD;}
+footer h2{font-size:clamp(26px,3.4vw,36px);color:#fff;max-width:520px;line-height:1.15;}
+footer .wrap.top{display:flex;justify-content:space-between;gap:44px;flex-wrap:wrap;position:relative;z-index:2;}
+footer p{color:#C8D4C0;}
+.foot-links{display:flex;flex-direction:column;gap:12px;font-size:15px;}
+.foot-links a{text-decoration:none;color:#EDE9DC;opacity:.9;transition:.2s;}
+.foot-links a:hover{opacity:1;color:var(--gold);}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:56px;padding-top:22px;font-size:12.5px;color:#9DB295;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;position:relative;z-index:2;}
+.grass-field{position:absolute;bottom:0;left:0;right:0;height:90px;pointer-events:none;overflow:hidden;}
+.grass-field svg{position:absolute;bottom:-2px;left:0;width:100%;height:100%;overflow:visible;}
+.gb{transform-origin:var(--ox) 90px;animation:sway var(--dur) ease-in-out infinite;animation-delay:var(--del);}
+footer .foot-bottom{position:relative;z-index:3;}
+
+/* ---------- BOUQUET WIDGET ---------- */
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.22) rotate(-4deg)}100%{transform:scale(1)}}
+.bouquet-panel{position:fixed;top:72px;right:18px;z-index:90;width:min(330px,calc(100vw - 36px));background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 24px 60px -18px rgba(43,43,36,.4);transform:translateY(-12px) scale(.97);opacity:0;pointer-events:none;transition:.35s cubic-bezier(.3,.8,.3,1);}
+.bouquet-panel.open{transform:none;opacity:1;pointer-events:auto;}
+.bouquet-panel h4{font-size:18px;margin-bottom:4px;}
+.bouquet-panel .sub{font-size:12.5px;color:var(--ink-soft);margin:0 0 14px;}
+.bq-stage{height:180px;display:flex;align-items:flex-end;justify-content:center;}
+.bq-list{display:flex;flex-direction:column;gap:7px;margin-top:12px;}
+.bq-item{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;color:var(--ink-soft);}
+.bq-item svg{width:20px;height:20px;flex:none;}
+.bq-item.got{color:var(--ink);}
+.bq-item .st{margin-left:auto;font-size:11px;font-weight:700;color:var(--sage);}
+.bq-item.got .st{color:var(--green);}
+
+/* growing plant fixed left */
+.plant-widget{position:fixed;bottom:0;left:26px;z-index:60;width:74px;height:130px;pointer-events:none;}
+@media(max-width:700px){.plant-widget{display:none;}}
+
+/* ---------- TOASTS ---------- */
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(200%);z-index:150;background:var(--ink);color:var(--cream);border-radius:18px;padding:16px 24px;display:flex;gap:14px;align-items:center;max-width:min(480px,calc(100vw - 40px));box-shadow:0 20px 50px -12px rgba(0,0,0,.45);transition:transform .55s cubic-bezier(.3,.9,.3,1), opacity .45s, visibility 0s .55s;opacity:0;visibility:hidden;}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible;transition:transform .55s cubic-bezier(.3,.9,.3,1), opacity .45s, visibility 0s;}
+.toast .t-ic{font-size:26px;flex:none;}
+.toast .t-txt b{display:block;font-family:var(--serif);font-size:16px;margin-bottom:2px;}
+.toast .t-txt span{font-size:13px;opacity:.8;line-height:1.45;display:block;}
+.toast .t-close{background:none;border:none;color:var(--cream);opacity:.6;font-size:15px;cursor:pointer;padding:4px;margin-left:4px;flex:none;align-self:flex-start;transition:.2s;font-family:var(--sans);}
+.toast .t-close:hover{opacity:1;transform:rotate(90deg);}
+
+/* thank-you overlay (full bouquet) */
+.celebrate{position:fixed;inset:0;z-index:160;background:rgba(43,43,36,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px;}
+.celebrate.open{display:flex;}
+.celebrate-card{background:var(--cream);border-radius:26px;max-width:440px;width:100%;padding:44px 38px;text-align:center;position:relative;overflow:hidden;animation:rise .6s cubic-bezier(.3,.9,.3,1);}
+@keyframes rise{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.celebrate-card h3{font-size:26px;margin:14px 0 10px;}
+.celebrate-card p{font-size:14.5px;color:var(--ink-soft);margin:0 0 22px;}
+.celebrate-card .big-bouquet{height:150px;display:flex;align-items:flex-end;justify-content:center;}
+
+/* pause decorative animation when its section is off-screen (saves battery and jank) */
+.anim-idle .cloud,.anim-idle .bird,.anim-idle .sun,.anim-idle .petal,.anim-idle .hs-fl,.anim-idle .hs-seed,.anim-idle .grass-swing,.anim-idle .gb{animation-play-state:paused !important;}
+
+/* --- small phones (360-400px): keep everything readable and tappable --- */
+@media(max-width:430px){
+  .wrap{padding:0 18px;}
+  nav .wrap{padding:8px 12px;}
+  .hero{padding:104px 0 60px;}
+  .hero h1{font-size:31px;}
+  .hero p.lead{font-size:16px;}
+  .rot-word{font-size:18px;min-width:0;display:block;}
+  .rotator{margin-top:30px;}
+  .btn{padding:12px 20px;font-size:13.5px;}
+  .section{padding:56px 0;}
+  .has-wave{padding-top:92px;}
+  .section-head{margin-bottom:32px;}
+  .case-card .cc-media{height:190px;}
+  .cc-body{padding:20px;}
+  .cc-body h3{font-size:19px;}
+  .sheet{width:100%;height:100dvh;border-radius:0;}
+  .sheet-inner{padding:20px 16px 60px;}
+  .cs-meta{gap:14px;padding:14px 16px;}
+  .cs-sec h3{font-size:19px;gap:10px;}
+  .cs-num{width:30px;height:30px;font-size:12px;}
+  .cs-outcome{padding:24px 20px 20px;}
+  .outcome-stats{gap:20px;}
+  .growth svg{width:34px;height:40px;}
+  .ig-stats{gap:12px;}
+  .stat-chip{padding:16px 12px;}
+  .stat-chip b{font-size:22px;}
+  .dd-head{padding:14px 12px;gap:10px;}
+  .dd-head b{font-size:16px;}
+  .bouquet-panel{right:10px;left:10px;width:auto;}
+  footer{padding:92px 0 32px;}
+}
+/* every interactive target stays finger-sized */
+@media(pointer:coarse){
+  .navlinks a{min-height:44px;min-width:44px;justify-content:center;}
+  .growth{min-height:44px;}
+  .btn,.proto-btn,.sheet-close,.embed-facade,.dd-head{min-height:44px;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ SVG DEFS: FLOWERS ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- poppy (Popeyes - terracotta) -->
+    <g id="fl-poppy">
+      <g transform="translate(50,50)">
+        <circle r="34" fill="#D97C5A" opacity=".25"/>
+        <path d="M0,-30 C14,-30 22,-16 20,-4 C30,-2 34,10 26,19 C20,28 6,30 0,24 C-6,30 -20,28 -26,19 C-34,10 -30,-2 -20,-4 C-22,-16 -14,-30 0,-30Z" fill="#D97C5A"/>
+        <circle r="9" fill="#3E2A22"/>
+        <circle r="4" fill="#E8B84B"/>
+      </g>
+    </g>
+    <!-- sunflower (Sky) -->
+    <g id="fl-cornflower">
+      <g transform="translate(50,50)">
+        <g fill="#E8B84B">
+          <ellipse rx="6.5" ry="17" cy="-21"/><ellipse rx="6.5" ry="17" cy="-21" transform="rotate(30)"/>
+          <ellipse rx="6.5" ry="17" cy="-21" transform="rotate(60)"/><ellipse rx="6.5" ry="17" cy="-21" transform="rotate(90)"/>
+          <ellipse rx="6.5" ry="17" cy="-21" transform="rotate(120)"/><ellipse rx="6.5" ry="17" cy="-21" transform="rotate(150)"/>
+          <ellipse rx="6.5" ry="17" cy="-21" transform="rotate(180)"/><ellipse rx="6.5" ry="17" cy="-21" transform="rotate(210)"/>
+          <ellipse rx="6.5" ry="17" cy="-21" transform="rotate(240)"/><ellipse rx="6.5" ry="17" cy="-21" transform="rotate(270)"/>
+          <ellipse rx="6.5" ry="17" cy="-21" transform="rotate(300)"/><ellipse rx="6.5" ry="17" cy="-21" transform="rotate(330)"/>
+        </g>
+        <g fill="#F0CB6A">
+          <ellipse rx="5" ry="13" cy="-17" transform="rotate(15)"/><ellipse rx="5" ry="13" cy="-17" transform="rotate(75)"/>
+          <ellipse rx="5" ry="13" cy="-17" transform="rotate(135)"/><ellipse rx="5" ry="13" cy="-17" transform="rotate(195)"/>
+          <ellipse rx="5" ry="13" cy="-17" transform="rotate(255)"/><ellipse rx="5" ry="13" cy="-17" transform="rotate(315)"/>
+        </g>
+        <circle r="12.5" fill="#6B4A2F"/>
+        <g fill="#8A6238"><circle cx="-4" cy="-3" r="1.6"/><circle cx="4" cy="-2" r="1.6"/><circle cx="0" cy="4" r="1.6"/><circle cx="-5" cy="4" r="1.3"/><circle cx="5" cy="5" r="1.3"/><circle cx="0" cy="-6" r="1.3"/></g>
+      </g>
+    </g>
+    <!-- daisy (Breezle - gold) -->
+    <g id="fl-daisy">
+      <g transform="translate(50,50)">
+        <g fill="#FFF8E6" stroke="#E8DCB8" stroke-width="1">
+          <ellipse rx="8" ry="24" cy="-16"/><ellipse rx="8" ry="24" cy="-16" transform="rotate(45)"/>
+          <ellipse rx="8" ry="24" cy="-16" transform="rotate(90)"/><ellipse rx="8" ry="24" cy="-16" transform="rotate(135)"/>
+          <ellipse rx="8" ry="24" cy="-16" transform="rotate(180)"/><ellipse rx="8" ry="24" cy="-16" transform="rotate(225)"/>
+          <ellipse rx="8" ry="24" cy="-16" transform="rotate(270)"/><ellipse rx="8" ry="24" cy="-16" transform="rotate(315)"/>
+        </g>
+        <circle r="12" fill="#E8B84B"/>
+      </g>
+    </g>
+    <!-- tulip (VR - lavender) -->
+    <g id="fl-tulip">
+      <g transform="translate(50,54)">
+        <path d="M-22,-8 C-22,-30 -10,-36 0,-24 C10,-36 22,-30 22,-8 C22,10 12,20 0,20 C-12,20 -22,10 -22,-8Z" fill="#A48BC4"/>
+        <path d="M0,-24 C6,-14 6,6 0,18 C-6,6 -6,-14 0,-24Z" fill="#8A6DB0"/>
+      </g>
+    </g>
+    <!-- forget-me-not (Dementia VR) -->
+    <g id="fl-forgetmenot">
+      <g transform="translate(50,50)">
+        <g>
+          <g transform="rotate(0)"><circle cy="-19" r="15" fill="#7B9ECF"/></g>
+          <g transform="rotate(72)"><circle cy="-19" r="15" fill="#7B9ECF"/></g>
+          <g transform="rotate(144)"><circle cy="-19" r="15" fill="#7B9ECF"/></g>
+          <g transform="rotate(216)"><circle cy="-19" r="15" fill="#7B9ECF"/></g>
+          <g transform="rotate(288)"><circle cy="-19" r="15" fill="#7B9ECF"/></g>
+        </g>
+        <g opacity=".55">
+          <g transform="rotate(0)"><circle cy="-22" r="8" fill="#A9C4E4"/></g>
+          <g transform="rotate(72)"><circle cy="-22" r="8" fill="#A9C4E4"/></g>
+          <g transform="rotate(144)"><circle cy="-22" r="8" fill="#A9C4E4"/></g>
+          <g transform="rotate(216)"><circle cy="-22" r="8" fill="#A9C4E4"/></g>
+          <g transform="rotate(288)"><circle cy="-22" r="8" fill="#A9C4E4"/></g>
+        </g>
+        <circle r="9" fill="#F2D98A"/>
+        <circle r="4.5" fill="#E8B84B"/>
+      </g>
+    </g>
+    <!-- petal for drift -->
+    <g id="petal-shape"><path d="M10,0 C18,6 18,18 10,26 C2,18 2,6 10,0Z"/></g>
+  </defs>
+</svg>
+
+<a class="skip" href="#work">Skip to the work</a>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 100 100"><use href="#fl-daisy"/></svg>
+      <span>Sanskruti Pawase</span>
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#top"><span class="nl-ic">🏡</span><span class="nl-txt">Home</span></a>
+      <a href="#work"><span class="nl-ic">🌸</span><span class="nl-txt">Projects</span></a>
+      <a href="#about"><span class="nl-ic">🦋</span><span class="nl-txt">About</span></a>
+      <a href="#contact"><span class="nl-ic">💌</span><span class="nl-txt">Contact</span></a>
+    </div>
+    <button class="growth attn" id="bouquetBtn" title="Read a case study to add its flower to your bouquet">
+      <svg viewBox="0 0 34 40" id="navBouquet" aria-hidden="true">
+        <!-- stems -->
+        <path d="M17,36 C17,28 8,23 6,15"  stroke="#5F7F5B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M17,36 C17,27 12,21 11,12" stroke="#5F7F5B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M17,36 C17,26 17,17 17,8"  stroke="#5F7F5B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M17,36 C17,27 22,21 23,12" stroke="#5F7F5B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M17,36 C17,28 26,23 28,15" stroke="#5F7F5B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <!-- blooms, one per case study read -->
+        <g class="nav-bloom off" data-fkey="popeyes"><g transform="translate(1,10) scale(.09)"><use href="#fl-poppy"/></g></g>
+        <g class="nav-bloom off" data-fkey="sky"><g transform="translate(6,7) scale(.09)"><use href="#fl-cornflower"/></g></g>
+        <g class="nav-bloom off" data-fkey="breezle"><g transform="translate(12,3) scale(.09)"><use href="#fl-daisy"/></g></g>
+        <g class="nav-bloom off" data-fkey="vr"><g transform="translate(18,7) scale(.09)"><use href="#fl-tulip"/></g></g>
+        <g class="nav-bloom off" data-fkey="dementia"><g transform="translate(23,10) scale(.09)"><use href="#fl-forgetmenot"/></g></g>
+        <!-- paper cone wrap -->
+        <path d="M11,30 L23,30 L18.5,40 L15.5,40 Z" fill="#F3EBDD" stroke="#D9CDB4" stroke-width="1"/>
+        <path d="M11,30 L23,30" stroke="#C98A90" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="pct"><b><span id="bqCount">0</span>/5 flowers</b><span>read a project to collect</span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-visit="hero">
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="cloud" style="top:30%;width:300px;height:80px;animation-duration:80s;animation-delay:-8s;">
+      <i style="left:0;top:26px;width:120px;height:54px;"></i><i style="left:75px;top:0;width:150px;height:80px;"></i><i style="left:180px;top:22px;width:120px;height:58px;"></i>
+    </div>
+    <div class="bird" style="top:16%;animation-duration:38s;animation-delay:-6s;"><svg viewBox="0 0 26 12"><path d="M1,9 Q7,1 13,8 Q19,1 25,9" stroke="#5A6B77" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="bird" style="top:12%;animation-duration:46s;animation-delay:-24s;"><svg viewBox="0 0 26 12" style="width:19px;height:9px;"><path d="M1,9 Q7,1 13,8 Q19,1 25,9" stroke="#5A6B77" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="bird" style="top:22%;animation-duration:52s;animation-delay:-38s;"><svg viewBox="0 0 26 12" style="width:15px;height:7px;"><path d="M1,9 Q7,1 13,8 Q19,1 25,9" stroke="#5A6B77" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="cloud" style="top:9%;width:220px;height:60px;animation-duration:95s;animation-delay:-20s;">
+      <i style="left:0;top:18px;width:90px;height:42px;"></i><i style="left:55px;top:0;width:110px;height:60px;"></i><i style="left:130px;top:16px;width:90px;height:44px;"></i>
+    </div>
+    <div class="cloud" style="top:22%;width:170px;height:48px;opacity:.7;animation-duration:130s;animation-delay:-70s;">
+      <i style="left:0;top:14px;width:70px;height:34px;"></i><i style="left:45px;top:0;width:85px;height:48px;"></i><i style="left:100px;top:12px;width:70px;height:36px;"></i>
+    </div>
+    <div class="cloud" style="top:4%;left:0;width:150px;height:40px;opacity:.6;animation-duration:110s;animation-delay:-45s;">
+      <i style="left:0;top:10px;width:60px;height:30px;"></i><i style="left:40px;top:0;width:75px;height:40px;"></i><i style="left:90px;top:10px;width:60px;height:30px;"></i>
+    </div>
+  </div>
+  <div class="hills" aria-hidden="true">
+    <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+      <path d="M0,70 C240,30 480,95 720,65 C960,35 1200,90 1440,55 L1440,110 L0,110 Z" fill="#EAF1E6"/>
+      <path d="M0,92 C300,60 600,105 900,80 C1140,62 1320,98 1440,84 L1440,110 L0,110 Z" fill="#DCE8D6"/>
+    </svg>
+    <svg viewBox="0 0 1440 110" preserveAspectRatio="none" style="position:absolute;inset:0;">
+      <g class="grass-swing" style="transform-origin:120px 104px;"><path d="M120,104 C118,88 114,80 110,72" stroke="#9CAF88" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+      <g class="grass-swing g2" style="transform-origin:128px 104px;"><path d="M128,104 C129,86 133,78 137,70" stroke="#8AA379" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="138" cy="68" r="5" fill="#E8B4B8"/></g>
+      <g class="grass-swing g3" style="transform-origin:1300px 100px;"><path d="M1300,100 C1298,84 1294,76 1292,68" stroke="#9CAF88" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="1291" cy="66" r="5" fill="#E8B84B"/></g>
+      <g class="grass-swing g2" style="transform-origin:1312px 100px;"><path d="M1312,100 C1313,86 1317,78 1320,72" stroke="#8AA379" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+      <g class="grass-swing" style="transform-origin:730px 108px;"><path d="M730,108 C729,94 726,88 724,82" stroke="#9CAF88" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="723" cy="80" r="4.4" fill="#A48BC4"/></g>
+    </svg>
+  </div>
+  <div id="petals"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow reveal"><span class="dot"></span>Open to work · UX / UI / Brand Design</span>
+      <h1 class="reveal d1">Design that grows on people, <em>rooted in research.</em></h1>
+      <p class="lead reveal d2">I'm Sanskruti, a UX &amp; brand designer who starts with the problem, not the screens. I dig into why something isn't working, weigh the options, and make design decisions a business can actually measure. Every case study you read here adds a flower to your bouquet.</p>
+      <div class="hero-actions reveal d3">
+        <a class="btn btn-solid" href="#work">Wander the garden ↓</a>
+        <a class="btn btn-outline" href="mailto:sanskrutipawase99@gmail.com">Get in touch</a>
+      </div>
+      <div class="rotator reveal d4">
+        <span class="rot-static">Lately I've been</span>
+        <span class="rot-word" id="rotWord">getting shortlisted by Popeyes UK's digital team 🍗</span>
+      </div>
+    </div>
+    <div class="hero-scene reveal d2" aria-hidden="true">
+      <svg viewBox="0 0 460 440" width="100%">
+        <!-- ground -->
+        <ellipse cx="230" cy="416" rx="235" ry="46" fill="#DCE8D6"/>
+        <ellipse cx="230" cy="424" rx="180" ry="30" fill="#CBDCC2"/>
+        <!-- stems -->
+        <g class="hs-fl" style="animation-delay:.1s">
+          <path d="M110,408 C108,340 104,300 106,258" stroke="#5F7F5B" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="92" cy="330" rx="16" ry="8" fill="#9CAF88" transform="rotate(-28 92 330)"/>
+          <g transform="translate(106,252) scale(.9) translate(-50,-50)"><use href="#fl-poppy"/></g>
+        </g>
+        <g class="hs-fl" style="animation-delay:.3s">
+          <path d="M185,412 C186,330 189,280 188,218" stroke="#5F7F5B" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="204" cy="316" rx="16" ry="8" fill="#9CAF88" transform="rotate(28 204 316)"/>
+          <g transform="translate(188,210) scale(1.05) translate(-50,-50)"><use href="#fl-cornflower"/></g>
+        </g>
+        <g class="hs-fl" style="animation-delay:.5s">
+          <path d="M262,414 C262,320 262,260 262,180" stroke="#5F7F5B" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="244" cy="300" rx="18" ry="9" fill="#9CAF88" transform="rotate(-26 244 300)"/>
+          <ellipse cx="281" cy="252" rx="18" ry="9" fill="#9CAF88" transform="rotate(26 281 252)"/>
+          <g transform="translate(262,172) scale(1.25) translate(-50,-50)"><use href="#fl-daisy"/></g>
+        </g>
+        <g class="hs-fl" style="animation-delay:.7s">
+          <path d="M338,410 C340,340 344,300 342,244" stroke="#5F7F5B" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="358" cy="330" rx="16" ry="8" fill="#9CAF88" transform="rotate(28 358 330)"/>
+          <g transform="translate(342,240) scale(.95) translate(-50,-50)"><use href="#fl-tulip"/></g>
+        </g>
+        <g class="hs-fl" style="animation-delay:.9s">
+          <path d="M406,406 C404,352 400,320 402,286" stroke="#5F7F5B" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+          <g transform="translate(402,278) scale(.85) translate(-50,-50)"><use href="#fl-forgetmenot"/></g>
+        </g>
+        <!-- grass tufts -->
+        <g stroke="#8AA379" stroke-width="3" stroke-linecap="round" fill="none">
+          <path d="M60,410 C58,396 55,390 52,384"/><path d="M70,412 C71,398 74,392 77,386"/>
+          <path d="M300,416 C299,404 297,398 295,392"/><path d="M310,417 C311,405 314,399 317,394"/>
+        </g>
+        <!-- floating seeds -->
+        <circle class="hs-seed" cx="80" cy="200" r="3" fill="#E8B4B8"/>
+        <circle class="hs-seed" style="animation-delay:-3s" cx="390" cy="170" r="2.6" fill="#E8B84B"/>
+        <circle class="hs-seed" style="animation-delay:-6s" cx="330" cy="120" r="2.2" fill="#9CAF88"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HOW I HELP ============ -->
+<section class="section has-wave" id="help" data-visit="help">
+  <div class="wave-top" aria-hidden="true"><svg viewBox="0 0 1440 52" preserveAspectRatio="none"><path d="M0,20 C300,44 600,6 900,24 C1140,38 1320,12 1440,24 L1440,0 L0,0 Z" fill="#DCE8D6"/></svg></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">How I can help</span>
+      <h2>Two hands: one holds the research, the other holds the brand.</h2>
+      <p>Whether you need a UX designer who tests before shipping, or a brand designer who makes people feel something, I've done both, often on the same project.</p>
+    </div>
+    <div class="help-grid">
+      <div class="help-card reveal">
+        <div class="ic" style="background:#E9F0E4;">🔍</div>
+        <h3>Research-led UX</h3>
+        <p>Ethnographic observation, usability testing, co-design workshops, controlled studies with statistical analysis (SPSS, NVivo). I find out what's true before deciding what's pretty.</p>
+      </div>
+      <div class="help-card reveal d1">
+        <div class="ic" style="background:#FBEAE2;">🎨</div>
+        <h3>Brand &amp; visual design</h3>
+        <p>Brand refreshes, loyalty experiences, playful campaign thinking, like the self-initiated Popeyes UK glow-up that got shortlisted by their digital team.</p>
+      </div>
+      <div class="help-card reveal d2">
+        <div class="ic" style="background:#EDE8F5;">📐</div>
+        <h3>End-to-end product design</h3>
+        <p>Wireframes to hi-fi prototypes, design systems and component libraries in Figma, WCAG accessibility audits, developer handoff, the whole path from sticky note to shipped.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / GARDEN ============ -->
+<section class="section has-wave" id="work" data-visit="work">
+  <div class="wave-top" aria-hidden="true"><svg viewBox="0 0 1440 52" preserveAspectRatio="none"><path d="M0,26 C240,50 480,4 720,22 C960,40 1200,8 1440,26 L1440,0 L0,0 Z" fill="#FDFCFA"/></svg></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">The Garden of Work</span>
+      <h2>Five projects. Five flowers. Pick them all.</h2>
+      <p>Each case study follows the same path: the problem, how I understood it, what I did, the methods I used, and what changed because of it.</p>
+    </div>
+    <div class="garden-hint reveal">🌸 Read a case study to the end and its flower joins your bouquet →</div>
+
+    <div class="case-grid">
+      <!-- Popeyes -->
+      <article class="case-card wide reveal" data-case="popeyes" tabindex="0" role="button" aria-label="Open Popeyes case study">
+        <div class="cc-media"><img src="assets/popeyes-banner.jpg" alt="Popeyes UK app redesign: Fun Zone and homepage screens" loading="lazy" width="900" height="560"></div>
+        <div class="cc-flower"><svg viewBox="0 0 100 100"><use href="#fl-poppy"/></svg></div>
+        <div class="cc-body">
+          <span class="cc-tag">Self-initiated · Brand &amp; Loyalty · 2025</span>
+          <h3>Popeyes UK Glow-Up</h3>
+          <p>An unprompted brand refresh built from in-store field research: store-first quick wins, then a gamified loyalty app with a spin wheel, Fun Zone and playful notifications. Presented to and shortlisted by Popeyes' digital team.</p>
+          <span class="cc-cta">Read case study · earn the poppy <span class="arr">→</span></span>
+        </div>
+      </article>
+
+      <!-- Sky -->
+      <article class="case-card reveal" data-case="sky" tabindex="0" role="button" aria-label="Open Sky Sports case study">
+        <div class="cc-media"><img src="assets/sky-banner.jpg" alt="Sky Sports Fan Connect watch party across laptop and mobile" loading="lazy" width="900" height="560"></div>
+        <div class="cc-flower"><svg viewBox="0 0 100 100"><use href="#fl-cornflower"/></svg></div>
+        <div class="cc-body">
+          <span class="cc-tag">Internship · Sky Sports · 2024</span>
+          <h3>Fan Connect</h3>
+          <p>End-to-end UX for a watch-party and fan community platform, 6 weeks from stakeholder workshops to a tested prototype with 90.7% user satisfaction.</p>
+          <span class="cc-cta">Read case study · earn the sunflower <span class="arr">→</span></span>
+        </div>
+      </article>
+
+      <!-- Breezle -->
+      <article class="case-card reveal d1" data-case="breezle" tabindex="0" role="button" aria-label="Open Breezle case study">
+        <div class="cc-media"><img src="assets/breezle-banner.jpg" alt="Breezle energy app screens showing smart meter data and room tracking" loading="lazy" width="900" height="560"></div>
+        <div class="cc-flower"><svg viewBox="0 0 100 100"><use href="#fl-daisy"/></svg></div>
+        <div class="cc-body">
+          <span class="cc-tag">Internship · GenGame Ltd · 2023–24</span>
+          <h3>Breezle</h3>
+          <p>A behaviour-change home energy app, 8 features across 2 personas, with iterative testing that lifted task completion by 40%.</p>
+          <span class="cc-cta">Read case study · earn the daisy <span class="arr">→</span></span>
+        </div>
+      </article>
+
+      <!-- VR -->
+      <article class="case-card reveal" data-case="vr" tabindex="0" role="button" aria-label="Open VR research case study">
+        <div class="cc-media"><img src="assets/vr-banner.jpg" alt="Participant selecting materials in the VR haptic study" loading="lazy" width="900" height="560"></div>
+        <div class="cc-flower"><svg viewBox="0 0 100 100"><use href="#fl-tulip"/></svg></div>
+        <div class="cc-body">
+          <span class="cc-tag">MSc Major Project · Loughborough</span>
+          <h3>Designing a home you can feel</h3>
+          <p>Choosing materials for your home in VR: does adding touch and sound make people trust the decision enough to buy? A controlled study with 20 participants, significant on every measure that mattered.</p>
+          <span class="cc-cta">Read case study · earn the tulip <span class="arr">→</span></span>
+        </div>
+      </article>
+
+      <!-- Dementia VR -->
+      <article class="case-card reveal" data-case="dementia" tabindex="0" role="button" aria-label="Open dementia VR training case study">
+        <div class="cc-media"><img src="assets/dementia-banner.jpg" alt="Care worker wearing a VR headset during training" loading="lazy" width="900" height="560"></div>
+        <div class="cc-flower"><svg viewBox="0 0 100 100"><use href="#fl-forgetmenot"/></svg></div>
+        <div class="cc-body">
+          <span class="cc-tag">MSc Advanced Interaction Design · Healthcare</span>
+          <h3>Teaching care workers to see pain</h3>
+          <p>A seven-room VR scenario training new care workers to recognise pain in dementia patients who cannot tell them where it hurts, with the emotional journey designed as deliberately as the interface.</p>
+          <span class="cc-cta">Read case study · earn the forget-me-not <span class="arr">→</span></span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section has-wave" id="about" data-visit="about">
+  <div class="wave-top" aria-hidden="true"><svg viewBox="0 0 1440 52" preserveAspectRatio="none"><path d="M0,26 C240,4 480,48 720,28 C960,8 1200,44 1440,22 L1440,0 L0,0 Z" fill="#E7F0E1"/></svg></div>
+  <div class="wrap about-grid">
+    <div class="ig-panel decision-path reveal">
+      <h4><span class="ic-chip">🧭</span> How I decide</h4>
+      <div class="dp-steps">
+        <div class="dp-step"><span class="dp-ic">🌰</span><div><b>Find the real problem</b><span>Observe and measure, never assume.</span></div></div>
+        <div class="dp-step"><span class="dp-ic">🌱</span><div><b>Understand who it hurts</b><span>And what it costs the business.</span></div></div>
+        <div class="dp-step"><span class="dp-ic">🌿</span><div><b>Grow options wide</b><span>The obvious fix is rarely the right one.</span></div></div>
+        <div class="dp-step"><span class="dp-ic">✂️</span><div><b>Prune to a decision</b><span>User value × business cost.</span></div></div>
+        <div class="dp-step"><span class="dp-ic">🌸</span><div><b>Bloom &amp; measure</b><span>Tie the outcome to a number that matters.</span></div></div>
+      </div>
+    </div>
+    <div class="about-copy reveal d1">
+      <div class="me-card">
+        <img src="assets/sanskruti.jpg" alt="Sanskruti Pawase" width="900" height="900">
+        <div><b>Sanskruti Pawase</b><span>UX / UI &amp; Brand Designer · Nottingham, UK</span></div>
+      </div>
+      <span class="kicker">About</span>
+      <h2>Hi, I'm Sanskruti.</h2>
+      <p>I design experiences that help a business grow by genuinely connecting with its audience, without flattening the culture and values that made the brand worth connecting with in the first place. That balance is the part I find most interesting.</p>
+      <p>UX &amp; brand designer, MSc in User Experience Design (Loughborough) on an engineering base. I'm as comfortable defending a decision with statistics as I am selling it with a story.</p>
+      <p>Four design roles in, the thing I value most isn't the toolkit, it's judgement. Tools change every season; I pick them up in days. The thinking is what transfers.</p>
+      <div class="methods" style="margin-top:18px;"><span>Figma</span><span>Miro</span><span>Adobe Suite</span><span>Framer</span><span>SPSS</span><span>NVivo</span><span>Analytics</span><span>AI workflows</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ig-stats">
+      <div class="stat-chip reveal"><span class="ic">🍗</span><b>Shortlisted</b><span>Popeyes UK digital team</span></div>
+      <div class="stat-chip reveal d1"><span class="ic">💚</span><b>90.7%</b><span>user satisfaction · Sky Sports</span></div>
+      <div class="stat-chip reveal d2"><span class="ic">📈</span><b>+40%</b><span>task completion · GenGame</span></div>
+      <div class="stat-chip reveal d3"><span class="ic">📄</span><b>Published</b><span>AIP Conference Proceedings</span></div>
+    </div>
+    <div class="ig-cols">
+      <div class="ig-panel reveal">
+        <h4><span class="ic-chip">💼</span> Experience</h4>
+        <div class="timeline">
+          <div class="tl-item now"><span class="yr">Sep 2025</span><b>UX Designer · Popeyes UK</b>Self-initiated redesign, shortlisted</div>
+          <div class="tl-item"><span class="yr">Apr – May 2024</span><b>UX/UI Designer · Sky Sports</b>Fan Connect community platform</div>
+          <div class="tl-item"><span class="yr">Nov 2023 – Jan 2024</span><b>UX/UI Designer · GenGame Ltd</b>Breezle behaviour-change energy app</div>
+          <div class="tl-item"><span class="yr">May – Jul 2023</span><b>UI/UX Designer · Sarvmatre International</b>Prodley e-commerce · led 5 interns</div>
+        </div>
+      </div>
+      <div class="ig-panel reveal d1">
+        <h4><span class="ic-chip">🎓</span> Education</h4>
+        <div class="timeline">
+          <div class="tl-item"><span class="yr">2023 – 2024</span><b>MSc User Experience Design</b>Loughborough University</div>
+          <div class="tl-item"><span class="yr">2019 – 2022</span><b>B.Tech Electronics &amp; Telecom</b>Mumbai University</div>
+          <div class="tl-item"><span class="yr">Oct 2023</span><b><a href="https://pubs.aip.org/aip/acp/article-abstract/2842/1/030002/2916328/Mental-health-tracking-website-Psychcafe" target="_blank" rel="noopener" style="color:var(--green);">Published · AIP Conference Proceedings ↗</a></b>PsychCafe, mental-health tracking website</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact" data-visit="contact">
+  <div class="wave-top" aria-hidden="true"><svg viewBox="0 0 1440 52" preserveAspectRatio="none"><path d="M0,24 C260,46 520,8 780,26 C1040,44 1240,10 1440,28 L1440,0 L0,0 Z"/></svg></div>
+  <div class="wrap top">
+    <div>
+      <h2>Building something that needs a designer who researches first?</h2>
+      <p style="margin-top:14px;max-width:420px;">I'm actively looking for UX, digital and brand/creative design roles, open to UK, remote and international opportunities.</p>
+      <a class="btn" style="border-color:#EDE9DC;color:#EDE9DC;margin-top:18px;" href="mailto:sanskrutipawase99@gmail.com">sanskrutipawase99@gmail.com</a>
+    </div>
+    <div class="foot-links">
+      <a href="tel:+447767972302">+44 07767 972302</a>
+      <a href="https://www.linkedin.com/in/sanskruti-pawase/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://pubs.aip.org/aip/acp/article-abstract/2842/1/030002/2916328/Mental-health-tracking-website-Psychcafe" target="_blank" rel="noopener">Published research ↗</a>
+      <a href="#top">Back to the top ↑</a>
+    </div>
+  </div>
+  <div class="grass-field" aria-hidden="true"><svg id="grassSvg" viewBox="0 0 1440 90" preserveAspectRatio="none"></svg></div>
+  <div class="wrap foot-bottom">
+    <span>Nottingham, UK 🇬🇧</span>
+    <span>Grown with care from real project work · 2026</span>
+  </div>
+</footer>
+
+<!-- ============ CASE OVERLAY ============ -->
+<div class="overlay" id="overlay" aria-modal="true" role="dialog">
+  <div class="overlay-bg" id="overlayBg"></div>
+  <div class="sheet" id="sheet"><div class="sheet-inner" id="sheetInner"></div></div>
+</div>
+
+<!-- ============ WIDGETS ============ -->
+<div class="plant-widget" aria-hidden="true"><svg id="plantSvg" viewBox="0 0 74 130" width="74" height="130"></svg></div>
+
+<div class="bouquet-panel" id="bouquetPanel">
+  <h4>Your bouquet 💐</h4>
+  <p class="sub">One flower per case study read. Collect all five.</p>
+  <div class="bq-stage"><svg id="bqSvg" viewBox="0 0 220 180" width="220" height="180"></svg></div>
+  <div class="bq-list" id="bqList"></div>
+</div>
+
+<div class="toast" id="toast"><div class="t-ic" id="toastIc">🌸</div><div class="t-txt"><b id="toastTitle"></b><span id="toastMsg"></span></div><button class="t-close" id="toastClose" aria-label="Dismiss">✕</button></div>
+
+<div class="celebrate" id="celebrate">
+  <div class="celebrate-card">
+    <div class="big-bouquet"><svg id="celebSvg" viewBox="0 0 220 180" width="220" height="180"></svg></div>
+    <h3 id="celebTitle">A full bouquet, thank you!</h3>
+    <p id="celebMsg">You read every case study. That's genuinely all a designer can ask of a stranger on the internet. These flowers are yours to keep.</p>
+    <button class="btn btn-solid" id="celebClose">Keep wandering 🌿</button>
+  </div>
+</div>
+
+<script>
+/* ================= DATA ================= */
+const CASES = {
+  popeyes: {
+    tag:"Self-initiated · Brand & Loyalty Redesign · Sept 2025",
+    title:"Popeyes UK Glow-Up", short:"Popeyes",
+    sub:"An unprompted brand refresh, built from independent field research and presented to Popeyes' team in Nottingham.",
+    flower:"fl-poppy", flowerName:"Poppy", color:"#D97C5A",
+    deep:{
+      blurb:"Ethnographic fieldwork · 12 observations · opportunity mapping · cost-weighted prioritisation",
+      phases:[
+        {p:"Discover: research from inside the counter",m:[
+          {t:"Participant observation (12 in-store sessions)",how:"Used my own shifts as a Popeyes team member as structured observation: watching order hesitation, queue behaviour, what customers photographed, what they complained about, and how long they stayed after eating.",why:"Insider access is the rarest thing in retail research. I could see natural behaviour with no observer effect and no recruitment cost. Surveys would have given me what customers <em>say</em>; the floor gave me what they <em>do</em>.",out:"A behavioural record across 12 sessions, including the key observation that nothing gave a customer a reason to return."},
+          {t:"Informal customer conversations",how:"Low-pressure conversations at the counter about what they'd come for and what they'd want next time.",why:"Formal intercept interviews change how people answer in a fast-food setting. Conversational probing kept responses honest.",out:"Language and motivations used directly in persona building."},
+          {t:"Brand &amp; market context analysis",how:"Mapped Popeyes UK's position: entered 2021, 65+ sites, 45 more planned in a single year, against competitors' loyalty and digital engagement offerings.",why:"Design recommendations to a scaling brand have to fit the growth stage. What works at 65 stores must survive at 110.",out:"Confirmation that competitors had loyalty mechanics Popeyes lacked entirely."}
+        ]},
+        {p:"Define: from noise to a decision",m:[
+          {t:"Persona development (3 personas)",how:"Synthesised observation and conversation into three distinct customer types with different motivations for visiting.",why:"A loyalty system that treats every customer identically rewards the ones who'd return anyway. Segmenting showed which behaviour was actually worth incentivising.",out:"Three personas used to pressure-test every proposed feature."},
+          {t:"HMW problem statement",how:"Framed a single how-might-we around emotional connection and repeat visits rather than 'redesign the app'.",why:"Framing it as an app problem would have pre-decided the solution before the evidence was in.",out:"A statement that legitimately allowed non-digital answers."},
+          {t:"Missed-opportunity mapping (6 areas)",how:"Clustered findings into six gaps: brand/digital connection, emotional connect, customer communication, plant-based visibility for vegans, loyalty &amp; gamification, and pet-friendliness.",why:"Grouping gaps by <em>type</em> rather than by feature let me see that most were cheap and physical, not expensive and digital.",out:"The insight that reframed the entire recommendation."}
+        ]},
+        {p:"Decide: the commercial judgement call",m:[
+          {t:"Cost-vs-impact prioritisation → dual-phase strategy",how:"Weighed each opportunity by implementation cost against likely customer impact, then split into <b>Store First</b> (wall gallery, festive tweaks, local promotions, pet water bowls, photo booth, outdoor game area) and <b>Digital Next</b> (points rewards, spin wheel, playful notifications, festive themes, birthday rewards, AI recommendations, digital gallery).",why:"This is the decision I'm proudest of. The expected pitch was a full app overhaul, but most observed friction was physical, immediate and cheap to fix. Recommending less spend, sooner, was the stronger commercial argument.",out:"A phased roadmap giving visible wins in weeks and reserving digital investment for where it compounds."}
+        ]},
+        {p:"Deliver: making it real enough to judge",m:[
+          {t:"Gamified loyalty system design",how:"Designed a points-based rewards structure with a spin wheel, plus a 'Fun Zone' community space with an art gallery and Spotify integration.",why:"For a young, socially active customer base, shareability <em>is</em> the marketing channel. Engagement mechanics turn customers into promoters at no media cost.",out:"A loyalty concept tied to data capture and free organic promotion."},
+          {t:"High-fidelity prototype (5 screens) + UX writing",how:"Built homepage, order, rewards, Fun Zone and notifications in Figma, writing push-notification copy in the brand's playful Louisiana voice.",why:"Notification copy is where a loyalty programme lives or dies. A generic push gets muted, and a muted channel makes the whole system worthless.",out:"A tangible prototype stakeholders could react to rather than imagine."},
+          {t:"Stakeholder presentation",how:"Presented the research, the strategic rationale and the prototype in person to the digital team in Nottingham.",why:"An unsolicited recommendation only lands if the reasoning is walked through. The research is what makes it a proposal rather than an opinion.",out:"Multiple features shortlisted by Popeyes' digital team."}
+        ]}
+      ],
+      note:"<b>Why this project matters to me:</b> nobody asked for it and nobody was paying. It's the clearest evidence of how I work when there's no brief: find the problem, evidence it, and argue for the cheapest thing that moves the number."
+    },
+    meta:[["Role","UX/UI & Brand Designer (solo)"],["Context","Self-initiated. I worked at Popeyes as a 'Joy Creator' and saw the gaps first-hand"],["Deliverable","Dual-phase strategy + hi-fi mobile prototype"]],
+    embeds:[{kind:"figma", frame:"phone", url:"https://www.figma.com/proto/mOlZkyZSW38Ltd2gMdkIDh/Popeyes-Design-new?node-id=1-998&p=f&viewport=45%2C329%2C0.32&t=ljYfimvY2QnR5rfR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+      title:"The Popeyes app prototype", hint:"5 screens, fully clickable",
+      cta:"Tap through the app", poster:"assets/popeyes-banner.jpg"}],
+    sections:[
+      {n:"01",h:"The problem",body:`<p>Popeyes entered the UK in 2021 and is scaling fast: 65+ restaurants and 45 more planned. But growth was outpacing connection: no loyalty programme, thin digital engagement, and little of the warmth of the brand's Louisiana personality reaching UK customers.</p><p>Working in-store, I watched customers order, eat and leave without a single reason to come back beyond the chicken itself.</p>`},
+      {n:"02",h:"How I understood it",body:`<p>I treated my shifts as ethnographic fieldwork: twelve in-store observation sessions, informal customer conversations, and competitor benchmarking. From this I built three personas and a clear problem statement, then mapped six missed-opportunity areas: emotional connect, communication, loyalty & gamification, plant-based visibility, pet-friendliness, and digital-to-store connection.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/popeyes-personas.jpg" alt="Three Popeyes customer personas: Sam the student, Maya the working parent, James the regular" width="1700" height="956"><figcaption>Three personas built from in-store observation, each with doing / thinking / feeling / pain points and a goal in their own words.</figcaption></figure>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/popeyes-brandmap.jpg" alt="Popeyes brand values audit mapping what the brand has, what is lacking, and a new approach" width="1900" height="1489"><figcaption>Brand values audit. For each of Popeyes' eight values I mapped <b>what it has</b> (orange), <b>where it's lacking</b> (red), and <b>a new approach</b> (green). This is where the six opportunity areas came from.</figcaption></figure>`},
+      {n:"03",h:"What could have been done",body:`<p>The obvious pitch is a shiny app redesign. But a digital overhaul is slow and expensive, and most of the friction I observed was physical and immediate. Leading with an app would have fixed the least urgent problem first.</p>`},
+      {n:"04",h:"What I did",body:`<p>I proposed a dual-phase strategy: <b>store first</b>: cheap, fast, high-impact fixes (wall gallery, festive tweaks, local promotions, pet water bowls, photo booth, outdoor game area), then <b>digital next</b>: a gamified loyalty system with a points-and-spin-wheel rewards engine, playful push notifications, birthday rewards, AI recommendations and a community "Fun Zone" with a digital art gallery.</p><p>I designed the full mobile experience as a hi-fi Figma prototype and presented it in person to the team, including notification copy written in the brand's voice.</p><img class="cs-img" loading="lazy" src="assets/popeyes-home.jpg" alt="Popeyes app homepage with points system and spin wheel" width="1500" height="843"><div class="cs-img-row"><img loading="lazy" src="assets/popeyes-rewards.jpg" alt="Rewards screen" width="1500" height="843"><img loading="lazy" src="assets/popeyes-funzone.jpg" alt="Fun Zone community screen" width="1500" height="843"></div><img class="cs-img" loading="lazy" src="assets/popeyes-notifications.jpg" alt="Playful push notification designs" width="1500" height="843">
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/popeyes-artbox.jpg" alt="Popeyes kids box featuring customer artwork and a QR code" width="1200" height="800"><figcaption>The store-and-app bridge: kids' artwork from the in-app gallery printed onto packaging as "Art Crew of the Week", with a QR code back into the Fun Zone, physical reward, digital loop.</figcaption></figure>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/popeyes-presentation.jpg" alt="Sanskruti presenting the Popeyes Glow-up deck to the digital team in Nottingham" width="1400" height="1050"><figcaption>Presenting the Glow-up to the team at Teal Park, Nottingham, September 2025.</figcaption></figure>`},
+      {n:"05",h:"Methods I used",body:`<div class="methods"><span>Ethnographic observation</span><span>Personas</span><span>Problem framing / HMW</span><span>Opportunity mapping</span><span>Competitor analysis</span><span>Gamification design</span><span>Hi-fi prototyping (Figma)</span><span>UX writing</span><span>Stakeholder presentation</span></div>`},
+    ],
+    outcome:{body:`<p>The concept was shortlisted by Popeyes' digital team after I presented it on-site. More importantly, the store-first framing showed stakeholders a path to visible wins within weeks rather than quarters, turning casual diners into brand promoters through fun, meaningful, culturally vibrant experiences.</p>`,
+      stats:[["6","opportunity areas identified"],["2-phase","strategy: store first, digital next"],["Shortlisted","by Popeyes' digital team"]]}
+  },
+  sky: {
+    tag:"Internship · Sky Sports · Apr–May 2024",
+    title:"Sky Sports: Fan Connect", short:"Fan Connect",
+    sub:"End-to-end UX for a digital fan community and watch-party platform, concept to tested prototype in six weeks.",
+    flower:"fl-cornflower", flowerName:"Sunflower", color:"#E8B84B",
+    embeds:[{kind:"figma", frame:"wide", url:"https://www.figma.com/proto/SiupFl2Pfw06yqMSMPwYpQ/Industry-design_PPT-and-Design-work?node-id=406-1422&p=f&viewport=340%2C356%2C0.04&t=ACndChNGWcfBQC8q-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=406%3A1422&show-proto-sidebar=1&page-id=0%3A1",
+      title:"The Fan Connect prototype", hint:"watch party flow, clickable",
+      cta:"Click through Fan Connect", poster:"assets/sky-banner.jpg"}],
+    deep:{
+      blurb:"Lean Agile UX · co-design workshop · gamified ethnography · 2 rounds × 12 participants · WCAG audit",
+      phases:[
+        {p:"Discover: aligning a business and its fans",m:[
+          {t:"Co-facilitated stakeholder ideation workshop",how:"Co-ran a structured group ideation session with Sky stakeholders, then translated raw participant input into actionable design directions.",why:"On a six-week timeline, misalignment discovered in week four is fatal. A workshop surfaces competing definitions of success while they're still cheap to reconcile.",out:"Shared definition of what 'fan community' meant commercially, and design directions with stakeholder fingerprints on them."},
+          {t:"Behavioural analysis via Google Analytics",how:"Analysed existing platform data to understand real navigation patterns and validate engagement assumptions before committing to an information architecture.",why:"Analytics tell you what people already do at scale, which is far more reliable than asking 12 people to predict their own behaviour.",out:"IA decisions grounded in observed behaviour rather than committee preference."},
+          {t:"BinGoal! gamified ethnographic study",how:"Designed and ran an original field study using a bingo mechanic. Participants filled a grid with predicted match metrics (first goal, winning team, yellow cards, shots on target, goal scorer, score prediction), then watched a live match together in a pub while I observed. Marking a square required genuinely tracking the game.",why:"You cannot measure 'engagement during a match' with a survey afterwards, because recall is unreliable and socially biased. Building the measurement instrument into the activity itself turned attention into observable behaviour.",out:"Evidence that game mechanics increased attention to game detail and investment in the experience. This finding is what the whole product concept rested on."}
+        ]},
+        {p:"Define: structure before pixels",m:[
+          {t:"Value proposition mapping",how:"Built a value proposition canvas pairing the fan's gains, pains and jobs against Sky's commercial gains, pain relievers and products.",why:"A fan community only gets funded if someone can point at the business pain it solves. Mapping fan pains (free pirated platforms, one-way interaction) against Sky's jobs (attract and retain, stay competitive) turned an experience idea into a commercial argument.",out:"A one-page artefact stakeholders could challenge, which is what alignment actually looks like."},
+          {t:"Information architecture",how:"Structured the platform around the engagement spikes the research revealed rather than around a persistent chat model.",why:"Research showed attention clusters around key match moments; designing for continuous interaction would have optimised for behaviour that doesn't exist.",out:"An architecture built around moments, not a chat box."},
+          {t:"Photographic user story",how:"Staged and shot a six-part user story following one fan from a pub watch party through onboarding, mid-match mini-games and sharing the next fixture.",why:"Photographed in real settings rather than sketched, so the team argued about whether the behaviour was believable instead of whether the illustration was pretty.",out:"A shared, concrete picture of the experience across a whole match day."}
+        ]},
+        {p:"Develop: building for handoff from day one",m:[
+          {t:"Points economy design",how:"Designed the gamification as a closed loop: point gainers (mini-games, live chat, article engagement, team-support streaks, badges) feeding an overall level and ranking, which is then spent in an item shop, raffles and predictions.",why:"Most gamification fails because points are awarded but never meaningfully spent. Designing earn and spend together is what makes the loop self-sustaining rather than a novelty.",out:"A complete economy, including a deliberate open slot for 'engaging items we have not thought of yet'."},
+          {t:"Principles tied to success metrics",how:"Set three design principles (belonging and connected, empowerment, engagement) and attached specific measurable metrics to each, such as watch parties created, non-Sky users joining invite links, item shop purchases and poll participation.",why:"Principles without metrics are decoration. Naming the number in advance is what lets a team tell later whether the design worked.",out:"A measurement plan handed over with the design, so success was defined before launch rather than argued about after."},
+          {t:"Figma component library",how:"Built and maintained the component library alongside the designs.",why:"In Lean Agile UX with a live developer handoff, a component library is the difference between a spec and a rebuild.",out:"Visual consistency across the platform and efficient developer handoff."},
+          {t:"WCAG accessibility audits",how:"Audited contrast ratios, visual hierarchy and screen-reader compatibility against WCAG standards throughout, not as a final check.",why:"For a broadcaster, accessibility is a legal and audience-reach requirement. Retrofitting it costs more than designing with it.",out:"Accessibility built into the component library rather than patched later."}
+        ]},
+        {p:"Evaluate: two rounds, twelve people",m:[
+          {t:"Usability testing (2 rounds, 12 participants)",how:"Ran task-based usability sessions across two rounds, redesigning between them and re-testing the changes.",why:"A single round finds problems; a second round proves the fixes worked. That second round is what converts findings into confidence.",out:"90.7% user satisfaction on the final prototype."},
+          {t:"Design rationale presentation",how:"Presented the prototype and the reasoning behind each decision directly to Sky Sports stakeholders.",why:"Research only creates value if the decision-makers understand which evidence drove which choice.",out:"A stakeholder-validated prototype delivered in six weeks."}
+        ]}
+      ],
+      note:"<b>The constraint that shaped everything:</b> six weeks. Every method here was chosen for evidence-per-day, analytics over new surveys, gamified observation over recall interviews, two tight test rounds over one large study."
+    },
+    meta:[["Role","UX/UI Designer Intern"],["Team","Sky Scape · cross-functional, Lean Agile UX"],["Timeline","6 weeks"]],
+    sections:[
+      {n:"01",h:"The problem",body:`<p>Sports fans watch together, but Sky's digital experience treated them as isolated viewers. The brief: explore how a fan community platform could deepen engagement around live sport, and prove it with users, fast.</p>`},
+      {n:"02",h:"How I understood it",body:`<p>I co-facilitated stakeholder ideation workshops to align on what "community" meant commercially, then used Google Analytics data to ground the information architecture in how fans actually navigate.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/sky-valueprop.jpg" alt="Value proposition canvas mapping Sky Sports gains, pains, pain relievers and customer jobs" width="1600" height="900"><figcaption>Value proposition mapping. Putting the fan's pains (free pirated platforms, one-way interaction, no unique experiences) directly against Sky's jobs to be done (attract and retain users, stay relevant) is what made the business case for community, rather than it being a nice idea.</figcaption></figure>
+      <p>Then I designed <em>BinGoal!</em>, a gamified ethnographic study testing whether game mechanics deepen attention during watch parties. They do.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/sky-bingoal.jpg" alt="BinGoal! research session: handwritten bingo grids of match metrics, and participants playing during a live match in a pub" width="1006" height="1080"><figcaption><b>BinGoal!</b> in the field. Participants filled a bingo grid with match metrics they predicted (first goal, yellow cards, shots on target, score prediction), then watched Man United vs Newcastle together in a pub. Marking a square required actually <i>tracking</i> the game, so attention became something I could observe and count rather than something I had to ask about afterwards.</figcaption></figure>`},
+      {n:"03",h:"What could have been done",body:`<p>We could have shipped a straightforward chat-plus-stream feature. But research showed passive chat doesn't hold attention through a 90-minute match; the engagement moments cluster around key events. The design had to be built around those spikes, not around a persistent chat box.</p>`},
+      {n:"04",h:"What I did",body:`<p>Led UX end to end: flows, wireframes and a hi-fi prototype for the watch-party concept, two rounds of usability testing with 12 participants, full WCAG accessibility audits, and the Figma component library that kept everything consistent for developer handoff.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/sky-userstory.jpg" alt="Six panel user story following a fan from a pub watch party through to sharing the next match day" width="1600" height="900"><figcaption>The user story, shot rather than sketched. Following one fan from cheering in a pub, through personalising her account and playing mini-games mid-match, to confirming the next match day with friends. Grounding the concept in real settings kept the team designing for a living room, not a wireframe.</figcaption></figure>
+      <p>The engagement engine is a points economy rather than a scattering of features: points are earned through watching, chatting and supporting a team, they roll up into an overall level and ranking, and they are spent on things fans actually want.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/sky-gamification.jpg" alt="Gamification system mapping point gainers, point contribution and use of points" width="1600" height="900"><figcaption>The gamification system, mapped end to end: what earns points, how points roll into a level and ranking, and what points buy (team colours, chat stickers, raffles, predictions). Designing the loop as an economy is what stops gamification becoming decoration.</figcaption></figure>
+      <p>Because "engagement" is easy to claim and hard to prove, I tied each design principle to metrics the business could actually track after launch.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/sky-metrics.jpg" alt="Design principles of belonging, empowerment and engagement, each mapped to success metrics" width="1600" height="900"><figcaption>Three design principles, each with its own success metrics. Belonging is measured by watch parties created and non-Sky users joining invite links, empowerment by live-chat participation and item shop purchases, engagement by returning users and poll participation.</figcaption></figure>
+      <p>Presented the final prototype and the reasoning behind every decision directly to Sky Sports stakeholders.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/sky-final.jpg" alt="Fan Connect final screens across laptop and mobile, showing watch party mode, live chat, mini games and profile" width="1500" height="843"><figcaption>The final experience across devices: watch party mode with invited friends on desktop, and live chat, mini-games, camera angles and the points profile on mobile.</figcaption></figure>`},
+      {n:"05",h:"Methods I used",body:`<div class="methods"><span>Stakeholder workshops</span><span>Co-design</span><span>Google Analytics</span><span>Information architecture</span><span>Usability testing (2 rounds, n=12)</span><span>WCAG audit</span><span>Design systems</span><span>Gamified ethnography</span><span>Lean Agile UX</span></div>`},
+    ],
+    outcome:{body:`<p>A tested, stakeholder-approved prototype in six weeks, with satisfaction scores that made the case for fan community as a product direction, and a component library the team could build on after I left.</p>`,
+      stats:[["90.7%","user satisfaction"],["12","usability test participants"],["6 wks","concept → tested prototype"]]}
+  },
+  breezle: {
+    tag:"Internship · GenGame Ltd · Nov 2023–Jan 2024",
+    title:"Breezle: a behaviour-change energy app", short:"Breezle",
+    sub:"Getting cash-rich, time-poor families to care about energy, without asking them to sacrifice comfort or fun.",
+    flower:"fl-daisy", flowerName:"Daisy", color:"#E8B84B",
+    deep:{
+      blurb:"Double diamond · COM-B behavioural model · assumption mapping · MoSCoW · iterative testing",
+      phases:[
+        {p:"Discover: understanding a family I wasn't",m:[
+          {t:"Secondary research",how:"Reviewed smart-meter capability and adoption (British Gas), plus family time-use studies showing mobile devices absorbed 38% of total family time and 47% of 'alone-together' time.",why:"The client's target user wasn't available for primary research at the volume needed, so rigorous secondary research was the honest substitute, and it surfaced the real competitor for attention: screens, not other energy apps.",out:"Evidence base on what data smart meters expose and where this family's attention actually goes."},
+          {t:"Competitor analysis",how:"Audited existing energy and behaviour-change apps for feature patterns and engagement tactics.",why:"To find the gap rather than rebuild what already exists and clearly isn't working.",out:"Confirmed most competitors report data; few change behaviour."},
+          {t:"COM-B behavioural model",how:"Mapped the target family against Capability, Opportunity and Motivation to locate exactly which one was blocking energy-saving behaviour.",why:"Behaviour change needs a behavioural framework, not a feature list. COM-B forced me to ask whether this family <em>couldn't</em>, <em>had no chance to</em>, or <em>didn't want to</em> save energy. The answer was motivation, which points at a completely different design.",out:"Diagnosis: capability and opportunity present, motivation absent. The design had to make saving rewarding, not easier."},
+          {t:"Assumption mapping &amp; prioritisation",how:"Listed every assumption made about this family, then plotted by certainty and impact to decide which to design around and which needed evidence first.",why:"Designing for a persona you can't interview means assumptions are unavoidable. The risk isn't having them, it's not knowing which ones would sink the product if wrong.",out:"A prioritised list of what to address first, and an explicit record of what remained unvalidated."}
+        ]},
+        {p:"Define: sharpening the target",m:[
+          {t:"Persona development",how:"Built a persona from the client brief's 'young good life family': cash-rich, time-poor, comfort-first, unwilling to accept disruption without a tangible reward.",why:"To hold the team to one specific family rather than a vague 'eco-conscious user' who doesn't exist in this segment.",out:"A persona whose constraints (no disruption, must be fun, must reward) acted as design constraints."},
+          {t:"Empathy mapping",how:"Layered what this family thinks, feels, says and does around energy on top of the persona.",why:"The persona gives demographics; the empathy map gives the emotional reality: after a long workday, energy saving ranks below everything.",out:"Pain points that reframed the problem from 'inform users' to 'earn attention'."},
+          {t:"User need statements &amp; HMW",how:"Converted pain points into need statements, then a single problem statement: how might we use smart-meter data to influence a money-rich, time-poor family to control domestic energy use and engage positively with climate change?",why:"A sharp HMW keeps a feature backlog honest, anything that doesn't answer it doesn't ship.",out:"One question every later decision was measured against."},
+          {t:"Experience design principles",how:"Set three: <b>technology handshake</b> (integrate with existing home tech, real-time), <b>task-efficient</b> (every session must return value), <b>friendly &amp; adaptable</b> (encourage without intruding).",why:"Principles settle arguments faster than opinions and stop scope creep dressed up as delight.",out:"A decision filter used throughout Develop and Deliver."}
+        ]},
+        {p:"Develop: deciding what NOT to build",m:[
+          {t:"MoSCoW prioritisation",how:"Scored a long feature wishlist into Must / Should / Could / Won't, weighing real-life practicality for this family against effort.",why:"The hardest design decision on a feature-rich brief is subtraction. MoSCoW made that defensible to stakeholders.",out:"8 features that earned their place, dashboards, room-level tracking, spike alerts with tied tips, gamified challenges, AI recommendations."},
+          {t:"Storyboarding",how:"Drew the family's real day around each key feature.",why:"To sanity-check that a feature fits a life, not just a screen flow.",out:"Rejected features that only worked if someone had spare time, which this family doesn't."},
+          {t:"Information architecture &amp; sitemap",how:"Built a colour-coded sitemap distinguishing pages, sections and features.",why:"Structure is cheapest to argue about before visual design starts.",out:"Agreed structure ahead of any UI work."}
+        ]},
+        {p:"Deliver: testing and iterating",m:[
+          {t:"Low-fidelity wireframes + Marvel prototype",how:"Wireframed core flows and built a clickable Marvel prototype from the low-fi screens.",why:"Testing early on low-fi keeps feedback on structure and comprehension instead of colour.",out:"A testable flow within days rather than weeks."},
+          {t:"Task-based usability testing (n=5, iterative)",how:"Assigned in-prototype tasks and probed four areas: layout comprehension, ability to progress, features liked or misunderstood, and whether they'd expect these in a real app. Iterated the design between rounds.",why:"Five users per round surfaces the majority of usability issues; iterating between rounds tests the fix, not just the flaw.",out:"+40% task-completion rate between first and final rounds."},
+          {t:"Documented sampling limitation",how:"Working professional parents couldn't be recruited in the timeframe, so I tested with available participants, recorded the demographic gap, and treated results as directional rather than confirmatory.",why:"Overstating a finding from a mismatched sample is how research loses credibility. Naming the constraint keeps the insight usable.",out:"Honest confidence levels attached to each finding."},
+          {t:"UI iteration &amp; design system",how:"Refined UI across rounds into final hi-fi screens, maintaining a shared Figma component library.",why:"Eight features across two personas drift visually fast without a component library, and handoff suffers.",out:"Consistent final screens and a dev-ready library."}
+        ]},
+        {p:"Reflect: risks flagged before build",m:[
+          {t:"Assumption risk mapping",how:"Plotted every remaining assumption on a certain/uncertain by high/low-risk grid, and wrote a testing strategy for each one. Smart-meter integration and quality-time definition landed top-right, the danger zone.",why:"The app was designed on assumptions I could not fully validate in the timeframe. Mapping them tells the client exactly where the product is fragile and what to test first, instead of pretending the risk is not there.",out:"A risk grid with a named validation method per assumption, handed over as part of the deliverable."},
+          {t:"Technical and ethical risk assessment",how:"Flagged smart-meter data integration as the make-or-break dependency, and personal energy data as a privacy obligation requiring strong protection.",why:"An app built on data you may not reliably access, or may not be entitled to handle, is a business risk and not just a design one.",out:"Risks documented for the client before development investment."}
+        ]}
+      ],
+      note:"<b>The thread:</b> every method here was chosen to compensate for a specific constraint. No access to the real user, a client with a fixed mission, and an internship-length timeline. Method selection <em>is</em> the design decision.",
+      artefact:{img:"assets/bz-reflection.jpg",cap:"Assumption risk mapping from the reflection: each assumption plotted by certainty and risk, with a testing strategy attached to every one."}
+    },
+    meta:[["Role","UX/UI Designer Intern"],["Client","GenGame Ltd · smart energy engagement"],["Process","Double diamond: Discover → Define → Develop → Deliver"]],
+    sections:[
+      {n:"01",h:"The problem",body:`<p>Meet the "young good life family": cash-rich, time-poor, comfort-first. They won't upgrade their home if it means disruption, won't feel restricted without good reason, and their energy use is invisible until one shocking bill a month later. GenGame's brief: use smart-meter data to shift this family's energy behaviour <em>and</em> their attitude to climate change, without touching their comfort.</p>`},
+      {n:"02",h:"How I understood it",body:`<p><b>Discover:</b> secondary research (smart-meter adoption, family screen-time studies showing devices eat 38% of family time) and competitor analysis, then the <b>COM-B behaviour model</b> to map what this family is actually capable of, has opportunity for, and is motivated by. Assumption mapping prioritised which gaps mattered most.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/bz-discovery.jpg" alt="Breezle product discovery: target user group, selected mindset and the evolution of the problem statement" width="1500" height="843"><figcaption>Product discovery. I selected the "Best for Me and My Family" mindset because it fit the family's cash-rich, time-poor lifestyle, then refined the problem statement three times, from a broad behavioural aim to a directional HMW.</figcaption></figure>
+      <p><b>Define:</b> persona and empathy mapping surfaced the real pain: saving energy is nobody's priority after a long workday. That shaped three experience principles: <b>technology handshake</b> (works with what's already in the home, real-time), <b>task-efficient</b> (every open earns something), and <b>friendly &amp; adaptable</b> (nudge, never nag).</p>`},
+      {n:"03",h:"What could have been done",body:`<p>A dashboard alone would satisfy the brief and change nothing. Data without a nudge is wallpaper. Equally tempting: guilt-based climate messaging, which this comfort-first family would delete in a week. The decision: make saving energy feel like family time, not a chore.</p>`},
+      {n:"04",h:"What I did",body:`<p><b>Develop:</b> <b>MoSCoW prioritisation</b> cut a long wishlist to 8 features worth building: smart-meter dashboards, room-by-room tracking, spike alerts with tied tips, gamified family challenges, AI recommendations.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/bz-features.jpg" alt="MoSCoW prioritisation board sorting Breezle features into must, should, could and won't have" width="1500" height="843"><figcaption>MoSCoW board. Every feature had to survive this before it earned a screen, and each assumption behind it was written down rather than quietly accepted.</figcaption></figure>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/bz-sitemap.jpg" alt="Colour-coded Breezle sitemap showing pages, sections and features" width="1500" height="843"><figcaption>Colour-coded sitemap: bold fills for pages, transparent for sections, outlines for features. Structure settled here, before any visual design.</figcaption></figure>
+      <p><b>Deliver:</b> low-fi wireframes prototyped in Marvel and put in front of users, then iterated across rounds into final hi-fi screens.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/bz-ui1.jpg" alt="Breezle UI: smart meter dashboard and room-by-room device tracking screens" width="1500" height="843"><figcaption>Smart-meter dashboard and room-level device tracking, with real-time assistance and climate education built into the flow rather than bolted on.</figcaption></figure>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/bz-ui2.jpg" alt="Breezle UI: family leaderboard, challenges and eco rewards screens" width="1500" height="843"><figcaption>The motivation layer: a family and friends leaderboard, joinable challenges, and points redeemable against eco-friendly products, turning saving energy into something the family does together.</figcaption></figure>`},
+      {n:"05",h:"Methods I used",body:`<div class="methods"><span>Secondary research</span><span>Competitor analysis</span><span>COM-B model</span><span>Assumption mapping</span><span>Persona &amp; empathy map</span><span>Need statements</span><span>Experience principles</span><span>MoSCoW</span><span>Storyboarding</span><span>Sitemap</span><span>Low-fi testing (Marvel)</span><span>Iterative UI</span></div>`},
+    ],
+    embeds:[
+      {kind:"figma", frame:"phone", url:"https://www.figma.com/proto/Swnek9KT2z7ioa8k9QWIBD/Experience-Design?node-id=266-14199&p=f&viewport=630%2C-214%2C0.25&t=dsrW5exkFuKBPxLp-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=266%3A14199&page-id=25%3A578",
+       title:"The Breezle app prototype", hint:"the full flow, clickable",
+       cta:"Tap through the app", poster:"assets/breezle-banner.jpg"},
+      {kind:"yt", id:"j7KKQYndmJc", frame:"wide",
+       title:"Walkthrough video", hint:"narrated tour of the design",
+       cta:"Play the walkthrough", poster:"assets/bz-ui1.jpg"}],
+    outcome:{body:`<p>Iterative testing drove a 40% lift in task completion between first and final rounds, evidence the "see spike → understand → act → get rewarded" loop worked. Honest reflection shipped with it: smart-meter data integration and data privacy were flagged as the make-or-break risks before any build.</p>`,
+      stats:[["+40%","task completion rate"],["8","features, pruned by MoSCoW"],["3","experience principles held the line"]]}
+  },
+  vr: {
+    tag:"MSc Major Project · Loughborough University · 2024",
+    title:"Designing a home you can feel", short:"the VR home design study",
+    sub:"Can people choose the materials for their home in VR, and trust that decision enough to buy? A controlled study on haptic feedback, trust and buying behaviour in interior design.",
+    flower:"fl-tulip", flowerName:"Tulip", color:"#A48BC4",
+    embeds:[{kind:"yt", id:"Du0caad4Ecs", frame:"wide",
+      title:"The full VR walkthrough", hint:"the multi-sensory prototype in use",
+      cta:"Play the walkthrough", poster:"assets/vr-banner.jpg"}],
+    deep:{
+      blurb:"Double diamond · within-subjects controlled study · n=20 · SPSS + thematic analysis",
+      phases:[
+        {p:"Discover: framing the question",m:[
+          {t:"Literature review",how:"Reviewed existing work on immersive commerce, presence and trust in VR to locate the gap: plenty on visual realism, little on whether <em>multi-sensory</em> feedback shifts decision-making time, trust and purchase behaviour.",why:"A research question is only worth 6 months if nobody has answered it. The review defined the gap and gave me validated constructs to measure against.",out:"Three formal research questions on time, trust and buying behaviour, plus a hypothesis that P3 (multi-sensory) would outperform on all three."},
+          {t:"Semi-structured stakeholder interview",how:"Interviewed a practising interior designer about their real process and where client communication breaks down.",why:"Before designing a VR tool for a domain, I needed the domain's actual pain, not my assumption of it.",out:"Confirmed the core friction: clients can't judge materials from visuals alone, which stalls sign-off."},
+          {t:"Co-design workshop (Lego Serious Play style)",how:"Ran a Lego-based group workshop with users to build and talk through the material-selection experience, observing requirements, preferences and pain points around space design and purchasing.",why:"Lego lowers the barrier for non-designers to express spatial and emotional needs they can't articulate in an interview.",out:"Feature ideas grounded in user language, and a clear signal that <em>touch</em> was the missing sense in the decision."}
+        ]},
+        {p:"Define: turning insight into a testable design",m:[
+          {t:"Requirements synthesis &amp; feature development",how:"Consolidated interview and workshop findings into a feature set, deliberately mirroring the real home-renovation journey rather than inventing a novel flow.",why:"Ecological validity: if the scenario doesn't resemble real decision-making, the trust measurements don't transfer.",out:"A defined interaction scenario and three prototype conditions to isolate the variable."},
+          {t:"Variable isolation across three prototypes",how:"P1 visual only · P2 visual + haptic · P3 visual + haptic + audio. Everything else held constant.",why:"To attribute any effect to multi-sensory feedback specifically, each added sense had to be the only thing that changed.",out:"A clean independent variable, the backbone of the whole study."}
+        ]},
+        {p:"Develop: prototyping &amp; de-risking",m:[
+          {t:"Low-fidelity prototyping",how:"Built rough VR scenes to test the interaction logic of material selection before investing in fidelity.",why:"Cheaper to discover a broken interaction in a grey-box scene than in a finished environment.",out:"Validated interaction model for the hi-fi build."},
+          {t:"Pilot testing",how:"Ran structured pilot sessions, iteratively refining prototypes, task wording and timing procedure based on feedback.",why:"Pilots catch the study-killers: ambiguous tasks, cybersickness, misread scales, while they are still fixable.",out:"Refined protocol and hi-fi prototypes ready for the controlled study."}
+        ]},
+        {p:"Evaluate: the controlled study",m:[
+          {t:"Sample size via power analysis (G*Power)",how:"Calculated required n using effect size 0.25, α = 0.05, power = 0.8 → 28 participants indicated; 20 completed the full within-subjects protocol.",why:"Choosing n by feel invites underpowered, meaningless results. Power analysis makes the sample defensible.",out:"A justified sample with the shortfall documented as a limitation, not hidden."},
+          {t:"Within-subjects design with block randomisation",how:"Every participant experienced all three prototypes; prototype order was block-randomised per participant.",why:"Within-subjects controls for individual differences in trust and tech-comfort; randomisation neutralises order and learning effects.",out:"Comparisons that reflect the prototype, not the person or the sequence."},
+          {t:"Ethics, consent &amp; risk assessment",how:"Full university ethics approval: participant information sheet, informed consent, and a VR-specific risk assessment; slots booked individually by invitation.",why:"VR carries real physical risk (disorientation, cybersickness) and the study collected personal data. Non-negotiable.",out:"Approved protocol, and a habit of designing research that can withstand scrutiny."},
+          {t:"Instruments: TOAST + EBBT + task time",how:"TOAST (Trust in Automated Systems, 7-point Likert, with Understanding and Performance subscales), EBBT (Exploratory Buying Behaviour Tendencies), and recorded task-completion time. Collected via Google Forms for clean, low-friction entry.",why:"Validated scales make findings comparable to published work; task time adds an objective behavioural measure alongside self-report.",out:"Three complementary measures, attitudinal, behavioural-intent, and observed performance."},
+          {t:"Exit interviews",how:"Post-session semi-structured interviews on usability, realism and satisfaction with each prototype.",why:"Numbers tell you <em>that</em> trust changed; interviews tell you <em>why</em>.",out:"Qualitative layer explaining the statistical differences."}
+        ]},
+        {p:"Analyse: making the numbers honest",m:[
+          {t:"Descriptive statistics &amp; boxplots",how:"Means, standard deviations and boxplots per prototype to inspect distribution and outliers.",why:"You look at the shape of your data before you test it, otherwise you'll apply the wrong test.",out:"Distribution profile per condition."},
+          {t:"Normality testing (Shapiro-Wilk)",how:"Tested each condition for normality; P2 returned a non-normal distribution (p &lt; 0.05) while P1 and P3 were normal.",why:"The choice between parametric and non-parametric tests must follow the data, not convenience.",out:"Justified switch to non-parametric testing."},
+          {t:"Non-parametric inferential testing",how:"Friedman tests for overall differences (e.g. Trust-Performance: χ² = 25.529, p &lt; 0.001), followed by Wilcoxon signed-rank pairwise comparisons, all three prototypes differed significantly from each other (e.g. P1 vs P3: Z = -3.736, p &lt; 0.001).",why:"An omnibus test says <em>something</em> differs; pairwise post-hoc says <em>which</em>, needed to claim P3 specifically wins.",out:"Time p &lt; 0.001 · Trust p &lt; 0.001 · Buying tendency p = 0.045, hypothesis supported."},
+          {t:"Effect sizes",how:"Calculated alongside significance testing.",why:"p-values prove an effect exists; effect sizes say whether it's big enough to matter to a business.",out:"Practical significance, not just statistical."},
+          {t:"Thematic analysis of exit interviews",how:"Transcribed (Google Colab) and coded into themes around usability, satisfaction and realism.",why:"To triangulate: if the themes contradict the statistics, the statistics need re-examining.",out:"Themes that corroborated the quantitative result, touch made the environment feel accountable, therefore trustworthy."}
+        ]},
+        {p:"Conclude: what a business does with it",m:[
+          {t:"Design recommendations for practitioners",how:"Translated findings into concrete guidance for UX designers building immersive retail experiences, plus documented limitations and future scope.",why:"Research that stops at 'significant difference found' is unfinished. Someone has to be able to act on it.",out:"Recommendations, stated limitations (sample shortfall, single domain), and a defined path for future study."}
+        ]}
+      ],
+      note:"<b>What I'd do differently:</b> recruit to the full 28 the power analysis called for, and test across more than one product domain before generalising. I'd rather state that plainly than over-claim. That instinct is what makes research usable."
+    },
+    meta:[["Role","Researcher & designer (solo thesis)"],["Study","Within-subjects, 3 prototypes, n=20"],["Measures","TOAST (trust) · EBBT (buying) · task time"]],
+    sections:[
+      {n:"01",h:"The problem",body:`<p>Choosing the materials for your own home is a slow, tactile process. You collect samples, run your hand over a floor tile, hold a fabric against the light, and only then commit. VR showrooms promise you can do all of this before buying, but sight alone may not be enough to trust a decision that expensive.</p><p>My question: when someone is choosing the finishes for their home in VR, does adding touch and sound actually increase their trust enough to change what they buy?</p>`},
+      {n:"02",h:"How I understood it",body:`<p>I ran a full double diamond. Literature review on trust in immersive commerce, an expert interview with a practising interior designer, and competitor analysis to define the problem, then persona, need statements and experience principles to sharpen it.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/vr-doublediamond.jpg" alt="Double diamond diagram showing discover, define, develop and deliver activities for the VR study" width="1446" height="901"><figcaption>The double diamond as actually run, with the methods named under each phase. Strategy on the left, execution on the right, and a single problem definition point where the first diamond closes.</figcaption></figure>
+      <p>The turning point was a co-design workshop using Lego, where participants built the spaces they were designing and talked through them.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/vr-lego.jpg" alt="Lego co-design workshop with participants building interior spaces, alongside sticky notes about haptic feedback" width="1500" height="815"><figcaption>The Lego co-design workshop. Building a room is far easier than describing one, so spatial and material needs surfaced that an interview would have missed. The sticky note on the right holds the question the whole thesis grew from: <i>how to incorporate haptic feedback touch in VR.</i></figcaption></figure>`},
+      {n:"03",h:"What could have been done",body:`<p>A simple A/B preference survey would have been faster and meaningless. Trust claims need controlled conditions, validated scales and statistics, or they are just vibes. I committed to a within-subjects controlled experiment, accepting the heavier ethics, recruitment and analysis load.</p>
+      <p>Before building anything I mapped the journey three ways: choosing materials the traditional way with catalogues and samples, doing it in a basic VR environment, and doing it in VR with sound and touch layered in.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/vr-journeys.jpg" alt="Three compared user journeys: traditional catalogue selection, VR selection, and VR with sound and haptic feedback" width="1200" height="720"><figcaption>Three journeys, compared step by step. The third adds two stages the others cannot have: <i>play the sound of the material</i> and <i>feel the texture of the material</i>. Laying them side by side is what showed exactly where multi-sensory feedback could change a decision, and therefore what the study needed to measure.</figcaption></figure>`},
+      {n:"04",h:"What I did",body:`<p>Built three VR prototypes, visual-only, visual+haptic, and multi-sensory (haptic+sound), then ran 20 participants through counterbalanced material-selection tasks. Measured trust (TOAST scale), buying tendency (EBBT scale) and task time; analysed in SPSS. Full ethics approval, consent flows and risk assessment included.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/vr-pilot.jpg" alt="Participant wearing a Meta Quest headset and holding controllers during a pilot session" width="1200" height="745"><figcaption>Pilot testing. Running the protocol on real people before the real study is what caught the ambiguous task wording and timing problems while they were still cheap to fix.</figcaption></figure>`},
+      {n:"05",h:"Methods I used",body:`<div class="methods"><span>Double diamond</span><span>Literature review</span><span>Stakeholder interviews</span><span>Lego co-design workshop</span><span>Thematic analysis (NVivo)</span><span>Prototype development</span><span>Within-subjects experiment</span><span>Validated scales (TOAST, EBBT)</span><span>Statistical analysis (SPSS)</span></div>`},
+    ],
+    outcome:{body:`<p>The multi-sensory prototype won on every measure that mattered: participants were faster, trusted the environment more, and were more likely to commit to a purchase, all statistically significant. Touch, it turns out, is a trust signal.</p>`,
+      stats:[["p<0.001","faster task completion"],["p<0.001","higher trust (TOAST)"],["p=0.045","higher buying tendency (EBBT)"]]}
+  },
+  dementia: {
+    tag:"MSc Advanced Interaction Design · Loughborough University",
+    title:"Teaching care workers to see pain", short:"the dementia VR training",
+    sub:"A VR training scenario helping new care workers recognise pain in dementia patients who cannot tell them where it hurts.",
+    flower:"fl-forgetmenot", flowerName:"Forget-me-not", color:"#7B9ECF",
+    meta:[["Format","Group project · MSc Advanced Interaction Design"],["My focus","UX research and interaction design"],["Aligned to","UN Sustainable Development Goal 3: Good Health &amp; Wellbeing"]],
+    sections:[
+      {n:"01",h:"The problem",body:`<p class="cs-note">A group project for MSc Advanced Interaction Design. I worked on the research framing and the interaction design; the scenario and prototype were built as a team.</p><p>Alzheimer's is among the world's leading causes of death, and people living with advanced dementia often cannot say that they are in pain. They show it instead, through behaviour and facial expression. New care workers have to read those signals with almost no practical experience, and getting it wrong means someone suffers in silence.</p><p>You cannot practise this on real patients, and textbooks cannot convey what a wince or a repeated hand-scratch actually looks like in a real room.</p>`},
+      {n:"02",h:"How I understood it",body:`<p>I started from the epidemiological case (dementia's global health burden) and then from the training gap: the skill required is perceptual and emotional, not factual, so the training has to be experiential.</p><p>That produced a UX vision statement that governed every later decision: <em>create VR scenarios giving new care workers close to real-life pain situations in dementia patients, so they can accurately notice a patient's pain despite limited practical experience, improving care efficiency and building empathy.</em></p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/aid-process.jpg" alt="Five stage process: research and discovery, ideation and conceptualisation, design and development, user testing and iteration, ethics and reflection" width="1238" height="365"><figcaption>The five-stage process. Ethics is a named stage rather than a footnote, because the subject matter is vulnerable people and trainee competence.</figcaption></figure>`},
+      {n:"03",h:"What could have been done",body:`<p>The safe option is an e-learning module: slides on pain indicators, a multiple-choice quiz, a certificate. It is cheap, it scales, and it teaches recognition of the <em>words</em> for pain behaviours rather than the ability to spot them in a living person under time pressure.</p><p>The harder judgement was that this training only works if it is uncomfortable. If the learner does not feel the worry of possibly getting it wrong, they are not rehearsing the real task.</p>`},
+      {n:"04",h:"What I did",body:`<p>I designed a seven-room VR scenario around a patient called Ben. The learner is briefed by a doctor, enters Ben's room, observes a series of his behaviours and selects which one is most associated with pain, narrows to a body part, reads his response to determine whether it is pain, then chooses a treatment and receives a score.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/aid-storyboard.jpg" alt="Seven room storyboard with the emotional journey mapped underneath, from clueless to empathy, worry, anxiety and finally happiness" width="1241" height="376"><figcaption>The storyboard, with the emotional journey deliberately designed underneath it: clueless, empathy, worry, anxiety, happiness. Aural and visual cues are specified per room, including sad background music while Ben sits alone.</figcaption></figure>
+      <p>Every branch is mapped, including the wrong answers. Choosing a normal behaviour returns "Oh, sadly. It's normal behaviour in this scenario, let's try again" rather than a bare failure, so the learner keeps going instead of disengaging.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/aid-flow.jpg" alt="Colour coded interaction flow showing rooms, buttons, pop-ups and voiceover across the whole VR training" width="1230" height="803"><figcaption>The full interaction flow, colour-coded by voiceover, room, button and pop-up, with every scoring branch and restart loop specified before build.</figcaption></figure>
+      <p>The interface decisions are grounded in theory rather than taste: information placed by focus zone using cognitive load theory and attentional mechanisms, buttons positioned near their corresponding limbs using Gestalt proximity, recognition over recall for Ben's medical history, and a points system drawing on operant conditioning.</p>
+      <figure class="cs-fig"><img class="cs-img" loading="lazy" src="assets/aid-principles.jpg" alt="Design rationale showing focus zones, Gestalt proximity, heuristics and gamification applied to the VR interface" width="1172" height="1051"><figcaption>Design rationale. Each interface decision is traced to the principle behind it, from vertical and horizontal alignment zones through to the reward loop.</figcaption></figure>`},
+      {n:"05",h:"Methods I used",body:`<div class="methods"><span>Secondary research</span><span>UX vision statement</span><span>Scenario design</span><span>Emotional journey mapping</span><span>Storyboarding</span><span>Interaction flow mapping</span><span>Cognitive load theory</span><span>Gestalt principles</span><span>Nielsen heuristics</span><span>Gamification</span><span>Ethics review</span></div>`},
+    ],
+    deep:{
+      blurb:"Healthcare VR training · emotional journey design · theory-led interaction decisions",
+      phases:[
+        {p:"Research and discovery",m:[
+          {t:"Epidemiological framing",how:"Grounded the project in world health data on Alzheimer's as a leading cause of death, and aligned it explicitly to UN Sustainable Development Goal 3.",why:"Healthcare design competes for funding against other healthcare design. Framing the problem at population scale is how a training tool gets taken seriously by the people who commission it.",out:"A justified problem worth solving, with a stated societal frame."},
+          {t:"Training gap analysis",how:"Identified that the competency required is perceptual and empathetic, and that new care workers lack the practical exposure to build it safely.",why:"The nature of the skill determines the medium. A perceptual skill cannot be taught through text, which is what ruled out conventional e-learning.",out:"The rationale for choosing VR, rather than VR being chosen first and justified afterwards."},
+          {t:"UX vision statement",how:"Wrote a single structured vision naming the user, the opportunity, the change and the intended outcome.",why:"On an emotionally loaded subject it is easy to drift into designing something moving rather than something effective. The vision statement was the anchor.",out:"One sentence every subsequent decision was checked against."}
+        ]},
+        {p:"Ideation and conceptualisation",m:[
+          {t:"Scenario and persona construction (Ben)",how:"Built a specific patient with dementia and arthritis, whose pain presents through a series of ambiguous behaviours: staring, scratching a hand, sitting still.",why:"Ambiguity is the actual difficulty of the job. A patient whose pain was obvious would have made a training tool that teaches nothing.",out:"A scenario with genuine diagnostic difficulty built into it."},
+          {t:"Emotional journey mapping",how:"Mapped the intended emotion for each of the seven rooms along valence and arousal, moving the learner from clueless through empathy, worry and anxiety to happiness, and specified the audio and visual cues that produce each one.",why:"In experiential training, emotion is the mechanism, not decoration. Designing the anxiety deliberately is what makes the rehearsal transfer to a real ward.",out:"An emotional arc with the sensory design that delivers it, room by room."}
+        ]},
+        {p:"Design and development",m:[
+          {t:"Full interaction flow specification",how:"Mapped every room, button, pop-up and voiceover line, including all failure branches and restart loops, in a single colour-coded diagram.",why:"In VR, a dead end is disorienting and can break presence entirely. Every path had to resolve before anything was built.",out:"A complete build specification with no unhandled states."},
+          {t:"Failure state design",how:"Wrote wrong-answer feedback that explains why the behaviour was normal and invites another attempt, rather than simply marking it incorrect.",why:"Learners who feel judged disengage, and a disengaged trainee learns nothing. The tone of failure feedback determines whether training completes.",out:"A recoverable failure loop that keeps the learner in the scenario."},
+          {t:"Theory-led interface decisions",how:"Applied cognitive load theory and attentional mechanisms to place information by focus zone, Gestalt proximity to position interaction buttons near the relevant limb, recognition over recall for patient history, visibility of system status, and user control and freedom for returning.",why:"VR has no established convention to fall back on and a very low tolerance for cognitive overload. Perceptual and cognitive principles were the only reliable basis for the decisions.",out:"An interface where each choice traces to a named principle and can be defended in review."},
+          {t:"Gamification and reinforcement",how:"Designed a points system awarding graded scores by treatment appropriateness, drawing on operant conditioning, ending with a score and a description of where to improve.",why:"Graded scoring teaches clinical nuance, since several treatments are acceptable but one is best. Binary right or wrong would have flattened that.",out:"A scoring model that reflects real clinical judgement rather than a quiz."}
+        ]},
+        {p:"Ethics and reflection",m:[
+          {t:"Ethical review of representation",how:"Treated the portrayal of a dementia patient, and the risk of trainees over-trusting a simulated competency, as explicit design considerations rather than afterthoughts.",why:"A training tool that produces false confidence in a care worker is actively harmful to patients. That risk belongs in the design process, not the disclaimer.",out:"Ethics carried as a named stage of the process, with representation and competency claims examined."}
+        ]}
+      ],
+      note:"<b>Why I keep coming back to this one:</b> it is the clearest case of designing for an outcome I could not directly measure. I could not test whether trainees became better at spotting pain on a real ward, so every decision had to be justified from theory and from the structure of the task itself. That discipline, arguing from mechanism when data is out of reach, is what I bring to ambiguous research problems."
+    },
+    outcome:{body:`<p>A fully specified VR training scenario: seven rooms, a designed emotional arc, every interaction branch mapped, and a scoring model that rewards clinical nuance. More importantly, a piece of work where the pedagogy, the emotion and the interface decisions all trace back to a single vision statement about helping a new care worker notice that someone is hurting.</p>`,
+      stats:[["7","rooms, fully specified"],["5","emotional states designed"],["SDG 3","Good Health &amp; Wellbeing"]]}
+  }
+};
+
+/* ================= STATE ================= */
+const LS_KEY = "sp-garden-v1";
+let state = {flowers:[], visited:[], thanked:false, celebrated:false};
+try{ const s = JSON.parse(localStorage.getItem(LS_KEY)); if(s && s.flowers) state = s; }catch(e){}
+const save = () => { try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }catch(e){} };
+
+/* progress: sections + case studies */
+const VISIT_UNITS = ["hero","help","work","about","contact","case:popeyes","case:sky","case:breezle","case:vr","case:dementia"];
+
+/* ================= HELPERS ================= */
+const $ = s => document.querySelector(s);
+const flowerSVG = (id,size=100) => `<svg viewBox="0 0 100 100" width="${size}" height="${size}"><use href="#${id}"/></svg>`;
+
+/* ---- inline interactive embeds (click to load, keeps the page fast) ---- */
+const LOCAL_FILE = location.protocol === "file:";   // embeds are blocked when opened straight off disk
+function embedSrc(e){
+  if(e.kind==="yt") return `https://www.youtube.com/embed/${e.id}?rel=0&playsinline=1`;
+  return e.url.replace("www.figma.com","embed.figma.com") + "&embed-host=share";
+}
+function embedExt(e){ return e.kind==="yt" ? `https://youtu.be/${e.id}` : e.url; }
+function embedHTML(e,i){
+  const frame = e.frame || "wide";
+  return `<div class="embed-wrap">
+    <div class="embed-head">
+      <b>${e.title}</b><span class="hint">${e.hint||""}</span>
+      <a class="ext" href="${embedExt(e)}" target="_blank" rel="noopener">Open full screen ↗</a>
+    </div>
+    <div class="embed-stage ${frame}">
+      <button class="embed-facade" data-embed="${i}" style="background-image:url('${e.poster}')" aria-label="Load ${e.title}">
+        <span class="play">▶</span>
+        <span class="lbl2">${e.cta||"Launch the interactive prototype"}</span>
+        <span class="sub2">${LOCAL_FILE ? "Opens in a new tab (previewing locally)" : (e.kind==="yt" ? "Plays here in the page" : "Click through it without leaving this page")}</span>
+      </button>
+    </div>
+  </div>`;
+}
+function mountEmbeds(c){
+  document.querySelectorAll("#sheetInner .embed-facade").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const e = c.embeds[+btn.dataset.embed];
+      if(LOCAL_FILE){ window.open(embedExt(e),"_blank","noopener"); return; }
+      const stage = btn.parentNode;
+      const f = document.createElement("iframe");
+      f.src = embedSrc(e);
+      f.allow = "fullscreen; autoplay; clipboard-write; encrypted-media; picture-in-picture";
+      f.setAttribute("allowfullscreen","");
+      f.referrerPolicy = "strict-origin-when-cross-origin";
+      f.title = e.title;
+      stage.appendChild(f);
+      btn.remove();
+      /* if the provider refuses to embed, fall back to a new tab after a moment */
+      const note = document.createElement("div");
+      note.className = "embed-fallback";
+      note.innerHTML = `Not loading? <a href="${embedExt(e)}" target="_blank" rel="noopener">open it in a new tab ↗</a>`;
+      stage.parentNode.appendChild(note);
+    },{once:true});
+  });
+}
+
+let toastTimer, toastScrollOrigin = null;
+function hideToast(){ $("#toast").classList.remove("show"); toastScrollOrigin = null; clearTimeout(toastTimer); }
+function toast(ic,title,msg,ms=6500){
+  $("#toastIc").textContent = ic;
+  $("#toastTitle").textContent = title;
+  $("#toastMsg").textContent = msg;
+  const t = $("#toast");
+  t.classList.add("show");
+  toastScrollOrigin = {win:scrollY, sheet:$("#sheet").scrollTop};
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(hideToast, ms);
+}
+/* dismiss on ✕ or when the user scrolls away */
+document.addEventListener("DOMContentLoaded",()=>{});
+function toastScrollCheck(){
+  if(!toastScrollOrigin) return;
+  const moved = Math.abs(scrollY - toastScrollOrigin.win) + Math.abs($("#sheet").scrollTop - toastScrollOrigin.sheet);
+  if(moved > 220) hideToast();
+}
+
+/* ================= PROGRESS RING & PLANT ================= */
+function progressPct(){
+  const n = VISIT_UNITS.filter(u=>state.visited.includes(u)).length;
+  return Math.round(n / VISIT_UNITS.length * 100);
+}
+function renderProgress(){
+  const pct = progressPct();
+  renderPlant(pct);
+  if(pct >= 40 && !state.thanked){
+    state.thanked = true; save();
+    setTimeout(()=>toast("🌷","Thank you for wandering this far","You've seen the heart of it, the home, the work, the person behind it. That means a lot. There's more blooming below if you're curious."),600);
+  }
+}
+/* growing plant: stages by pct */
+function renderPlant(pct){
+  const svg = $("#plantSvg");
+  const p = Math.max(0, Math.min(100, pct));
+  const h = 26 + p*0.72;                       // stem height grows with exploration
+  const y0 = 130, yTop = y0 - h;
+  let s = `<path d="M37,${y0} C37,${y0-h*0.4} 37,${y0-h*0.7} 37,${yTop}" stroke="#5F7F5B" stroke-width="4" fill="none" stroke-linecap="round"/>`;
+  /* leaves fade in early so it never looks like a bare stick */
+  if(p>=8)  s += `<path d="M37,${y0-h*0.35} Q22,${y0-h*0.45} 18,${y0-h*0.28}" stroke="#5F7F5B" stroke-width="3" fill="none"/><ellipse cx="17" cy="${y0-h*0.28}" rx="9" ry="5" fill="#9CAF88" transform="rotate(-25 17 ${y0-h*0.28})"/>`;
+  if(p>=28) s += `<path d="M37,${y0-h*0.6} Q52,${y0-h*0.7} 56,${y0-h*0.53}" stroke="#5F7F5B" stroke-width="3" fill="none"/><ellipse cx="57" cy="${y0-h*0.53}" rx="9" ry="5" fill="#9CAF88" transform="rotate(25 57 ${y0-h*0.53})"/>`;
+  /* head: always present. sepals -> bud -> opening bloom -> full flower */
+  if(p < 30){
+    const g = 0.5 + p/30*0.5;                  // small green bud from the very start
+    s += `<ellipse cx="37" cy="${yTop-4}" rx="${5*g}" ry="${7*g}" fill="#7E9B76"/>`;
+  } else if(p < 55){
+    const g = (p-30)/25;                       // bud colours up
+    s += `<ellipse cx="37" cy="${yTop-6}" rx="${5+g*2}" ry="${7+g*3}" fill="#C2864F"/>`;
+  } else {
+    const g = Math.min(1,(p-55)/45);           // bloom opens, 0 -> 1
+    const scale = 0.20 + g*0.26;
+    s += `<g transform="translate(37,${yTop-10}) scale(${scale.toFixed(3)}) translate(-50,-50)" style="transition:.5s"><use href="#fl-poppy"/></g>`;
+  }
+  svg.innerHTML = s;
+}
+
+/* ================= VISIT TRACKING ================= */
+function markVisited(u){
+  if(!state.visited.includes(u)){
+    state.visited.push(u); save(); renderProgress();
+  }
+}
+const visitObs = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting) markVisited(e.target.dataset.visit); });
+},{threshold:0.35});
+document.querySelectorAll("[data-visit]").forEach(el=>visitObs.observe(el));
+
+/* ================= REVEAL ================= */
+const revObs = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); revObs.unobserve(e.target);} });
+},{threshold:0.12});
+document.querySelectorAll(".reveal").forEach(el=>revObs.observe(el));
+
+/* ================= NAV ================= */
+addEventListener("scroll",()=>{ $("#nav").classList.toggle("scrolled", scrollY>10); },{passive:true});
+
+/* scrollspy: highlight the section you are in */
+(function(){
+  const map = {hero:"#top", help:"#top", work:"#work", about:"#about", contact:"#contact"};
+  const links = [...document.querySelectorAll("#navlinks a")];
+  const spy = new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const href = map[e.target.dataset.visit];
+      links.forEach(a=>a.classList.toggle("active", a.getAttribute("href")===href));
+    });
+  },{rootMargin:"-35% 0px -55% 0px"});
+  document.querySelectorAll("[data-visit]").forEach(el=>spy.observe(el));
+})();
+
+/* ================= HERO PETALS ================= */
+(function(){
+  const colors = ["#E8B4B8","#D97C5A","#9CAF88","#E8B84B","#A48BC4"];
+  const box = $("#petals");
+  const n = matchMedia("(max-width:700px)").matches ? 7 : 12;
+  for(let i=0;i<n;i++){
+    const el = document.createElementNS("http://www.w3.org/2000/svg","svg");
+    el.setAttribute("viewBox","0 0 20 26");
+    el.setAttribute("class","petal");
+    const sz = 10+Math.random()*14;
+    el.setAttribute("width",sz); el.setAttribute("height",sz*1.3);
+    el.innerHTML = `<use href="#petal-shape" fill="${colors[i%colors.length]}"/>`;
+    el.style.left = Math.random()*100+"%";
+    el.style.animationDuration = (11+Math.random()*14)+"s";
+    el.style.animationDelay = (-Math.random()*20)+"s";
+    el.style.opacity = .35+Math.random()*.45;
+    box.appendChild(el);
+  }
+})();
+
+/* ================= CASE OVERLAY ================= */
+let activeCase = null, earnObs = null;
+function openCase(key){
+  const c = CASES[key]; if(!c) return;
+  activeCase = key;
+  markVisited("case:"+key);
+  const secs = c.sections.map(s=>`<div class="cs-sec"><h3><span class="cs-num">${s.n}</span>${s.h}</h3>${s.body}</div>`).join("");
+  const got = state.flowers.includes(key);
+  $("#sheetInner").innerHTML = `
+    <button class="sheet-close" onclick="closeCase()">Close ✕</button>
+    <div class="cs-medal">${flowerSVG(c.flower,42)}</div>
+    <span class="cs-tag">${c.tag}</span>
+    <h2>${c.title}</h2>
+    <p class="cs-sub">${c.sub}</p>
+    <div class="cs-meta">${c.meta.map(m=>`<div><b>${m[0]}</b>${m[1]}</div>`).join("")}</div>
+    ${secs}
+    ${c.deep ? `<div class="dd" id="ddBox">
+      <button class="dd-head" onclick="this.parentNode.classList.toggle('open')">
+        <span class="dd-ic">🔬</span>
+        <span style="flex:1;"><b>The full research protocol</b><span>${c.deep.blurb}</span></span>
+        <span class="chev">▼</span>
+      </button>
+      <div class="dd-body"><div class="dd-inner">
+        ${c.deep.phases.map(ph=>`<div class="dd-phase"><h5>${ph.p}</h5>${ph.m.map(m=>`
+          <div class="dd-m"><b>${m.t}</b>
+            <p><span class="lbl">How:</span> ${m.how}</p>
+            <p><span class="lbl">Why:</span> ${m.why}</p>
+            <p><span class="lbl">Output:</span> ${m.out}</p>
+          </div>`).join("")}</div>`).join("")}
+        ${c.deep.artefact ? `<figure class="cs-fig" style="margin-top:24px;"><img class="cs-img" loading="lazy" src="${c.deep.artefact.img}" alt="Research artefact"><figcaption>${c.deep.artefact.cap}</figcaption></figure>` : ""}
+        ${c.deep.note ? `<div class="dd-note">${c.deep.note}</div>` : ""}
+      </div></div>
+    </div>` : ""}
+    ${c.embeds ? `<span class="proto-label" style="display:block;margin:30px 0 0;">✨ Experience it yourself, right here</span>${c.embeds.map((e,i)=>embedHTML(e,i)).join("")}` : ""}
+    ${c.proto ? `<div class="proto-row">${c.proto}</div>` : ""}
+    <div class="cs-outcome">
+      <h3>The outcome</h3>${c.outcome.body}
+      <div class="outcome-stats">${c.outcome.stats.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join("")}</div>
+    </div>
+    <div class="cs-earn" id="earnZone">
+      <div class="fl">${flowerSVG(c.flower,58)}</div>
+      <p id="earnTxt">${got ? `The <b>${c.flowerName.toLowerCase()}</b> is already in your bouquet. Thanks for re-reading! 🌿` : `You made it to the end, the <b>${c.flowerName.toLowerCase()}</b> is joining your bouquet…`}</p>
+    </div>
+    ${(()=>{
+      const i = ORDER.indexOf(key);
+      const nk = ORDER[(i+1)%ORDER.length], pk = ORDER[(i-1+ORDER.length)%ORDER.length];
+      const nc = CASES[nk], pc = CASES[pk];
+      const nGot = state.flowers.includes(nk);
+      return `<div class="cs-nextnav">
+        <button class="cs-nextcard prev" onclick="openCase('${pk}')">
+          <span style="font-size:18px;">←</span>
+          <span><span class="nx-k">Previous</span><span class="nx-t">${pc.short}</span></span>
+        </button>
+        <button class="cs-nextcard" onclick="openCase('${nk}')">
+          ${flowerSVG(nc.flower,36)}
+          <span style="flex:1;"><span class="nx-k">Next project</span><span class="nx-t">${nc.title}</span><span class="nx-s">${nGot ? "Already picked, read again 🌿" : `Keep going, catch the ${nc.flowerName.toLowerCase()} 🌸`}</span></span>
+          <span style="font-size:18px;">→</span>
+        </button>
+      </div>`;
+    })()}`;
+  if(c.embeds) mountEmbeds(c);
+  if(!$("#overlay").classList.contains("open")) lockScroll();
+  $("#overlay").classList.add("open");
+  $("#sheet").scrollTop = 0;
+  /* earn flower when outcome reaches viewport */
+  if(earnObs) earnObs.disconnect();
+  if(!got){
+    earnObs = new IntersectionObserver(es=>{
+      es.forEach(e=>{
+        if(e.isIntersecting){ earnFlower(key); earnObs.disconnect(); }
+      });
+    },{root:$("#sheet"),threshold:0.5});
+    earnObs.observe($("#earnZone"));
+  }
+}
+function closeCase(){
+  $("#overlay").classList.remove("open");
+  unlockScroll();
+  if(earnObs) earnObs.disconnect();
+  activeCase = null;
+}
+/* iOS ignores body{overflow:hidden}, so pin the body and restore the scroll position */
+let _scrollY = 0;
+function lockScroll(){
+  _scrollY = window.scrollY;
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${_scrollY}px`;
+  document.body.style.left = "0";
+  document.body.style.right = "0";
+  document.body.style.overflow = "hidden";
+}
+function unlockScroll(){
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.left = "";
+  document.body.style.right = "";
+  document.body.style.overflow = "";
+  window.scrollTo(0, _scrollY);
+}
+$("#overlayBg").onclick = closeCase;
+addEventListener("keydown",e=>{ if(e.key==="Escape") closeCase(); });
+document.querySelectorAll(".case-card").forEach(el=>{
+  el.addEventListener("click",()=>openCase(el.dataset.case));
+  el.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); openCase(el.dataset.case);} });
+});
+
+/* ================= BOUQUET ================= */
+const ORDER = ["popeyes","sky","breezle","vr","dementia"];
+const TOTAL = ORDER.length;
+function flyFlowerToBouquet(key){
+  const c = CASES[key];
+  const from = document.getElementById("earnZone");
+  const to = document.getElementById("navBouquet");
+  if(!from || !to) return;
+  const r1 = from.getBoundingClientRect(), r2 = to.getBoundingClientRect();
+  const el = document.createElement("div");
+  el.innerHTML = flowerSVG(c.flower, 52);
+  Object.assign(el.style,{position:"fixed",zIndex:210,pointerEvents:"none",
+    left:(r1.left + r1.width/2 - 26)+"px", top:(r1.top + 20)+"px",
+    transition:"all 1.15s cubic-bezier(.45,.05,.35,1)", filter:"drop-shadow(0 6px 12px rgba(46,75,63,.4))"});
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    el.style.left = (r2.left + r2.width/2 - 10)+"px";
+    el.style.top  = (r2.top + 4)+"px";
+    el.style.transform = "scale(.36) rotate(360deg)";
+    el.style.opacity = ".95";
+  }));
+  setTimeout(()=>{
+    el.remove();
+    const btn = $("#bouquetBtn");
+    btn.classList.add("pop");
+    setTimeout(()=>btn.classList.remove("pop"),600);
+    renderBouquet();
+  }, 1180);
+}
+function earnFlower(key){
+  if(state.flowers.includes(key)) return;
+  state.flowers.push(key); save();
+  renderProgress();
+  const c = CASES[key];
+  flyFlowerToBouquet(key);
+  const left = TOTAL - state.flowers.length;
+  toast("🌸",`A ${c.flowerName.toLowerCase()} for your bouquet`,`Thank you for reading the ${c.short} story. ${left ? left+" flower"+(left>1?"s":"")+" still growing in the garden." : ""}`);
+  document.querySelector(`.case-card[data-case="${key}"]`)?.classList.add("bloomed");
+  if(state.flowers.length===TOTAL && !state.celebrated){
+    state.celebrated = true; save();
+    setTimeout(()=>{ drawBouquet($("#celebSvg"),ORDER); $("#celebrate").classList.add("open"); petalBurst(); },1700);
+  }
+}
+function drawBouquet(svg, keys){
+  /* stems fan out from a wrap point */
+  const cx=110, baseY=172;
+  const gotKeys = ORDER.filter(k=>keys.includes(k));
+  let s = "";
+  const n = Math.max(gotKeys.length,1);
+  gotKeys.forEach((k,i)=>{
+    const spread = gotKeys.length>1 ? (i/(gotKeys.length-1)-0.5) : 0;
+    const tx = cx + spread*110, ty = 46 + Math.abs(spread)*26;
+    s += `<path d="M${cx},${baseY-26} C${cx},${baseY-70} ${tx},${ty+66} ${tx},${ty+26}" stroke="#5F7F5B" stroke-width="3.4" fill="none" stroke-linecap="round"/>`;
+  });
+  /* leaves */
+  s += `<ellipse cx="${cx-20}" cy="${baseY-58}" rx="12" ry="6" fill="#9CAF88" transform="rotate(-35 ${cx-20} ${baseY-58})"/>
+        <ellipse cx="${cx+22}" cy="${baseY-52}" rx="12" ry="6" fill="#9CAF88" transform="rotate(35 ${cx+22} ${baseY-52})"/>`;
+  gotKeys.forEach((k,i)=>{
+    const spread = gotKeys.length>1 ? (i/(gotKeys.length-1)-0.5) : 0;
+    const tx = cx + spread*110, ty = 46 + Math.abs(spread)*26;
+    s += `<g transform="translate(${tx-21},${ty+5}) scale(.42)" style="animation:bloomIn .6s ${i*0.12}s both"><use href="#${CASES[k].flower}"/></g>`;
+  });
+  /* wrap */
+  s += `<path d="M${cx-16},${baseY-30} L${cx+16},${baseY-30} L${cx+9},${baseY} L${cx-9},${baseY}Z" fill="#E8DCC0" stroke="#D4C49A" stroke-width="1.5"/>
+        <path d="M${cx-16},${baseY-30} L${cx+16},${baseY-30}" stroke="#C98A90" stroke-width="4" stroke-linecap="round"/>`;
+  if(!gotKeys.length){
+    s = `<text x="${cx}" y="95" text-anchor="middle" font-size="34">💐</text><text x="${cx}" y="125" text-anchor="middle" font-size="11" fill="#6B6558" font-family="Inter,sans-serif">No flowers yet, go read!</text>`;
+  }
+  svg.innerHTML = s;
+}
+function renderBouquet(){
+  $("#bqCount").textContent = state.flowers.length;
+  $("#bouquetBtn").classList.toggle("attn", state.flowers.length===0);
+  document.querySelectorAll(".nav-bloom").forEach(b=>{
+    b.classList.toggle("off", !state.flowers.includes(b.dataset.fkey));
+  });
+  drawBouquet($("#bqSvg"), state.flowers);
+  $("#bqList").innerHTML = ORDER.map(k=>{
+    const c = CASES[k], got = state.flowers.includes(k);
+    return `<div class="bq-item ${got?"got":""}">${flowerSVG(c.flower,20)}<span>${c.flowerName} · ${c.short}</span><span class="st">${got?"picked ✓":"still growing"}</span></div>`;
+  }).join("");
+  ORDER.forEach(k=>{ if(state.flowers.includes(k)) document.querySelector(`.case-card[data-case="${k}"]`)?.classList.add("bloomed"); });
+}
+$("#bouquetBtn").onclick = ()=>$("#bouquetPanel").classList.toggle("open");
+document.addEventListener("click",e=>{
+  if(!e.target.closest("#bouquetPanel") && !e.target.closest("#bouquetBtn")) $("#bouquetPanel").classList.remove("open");
+});
+$("#celebClose").onclick = ()=>$("#celebrate").classList.remove("open");
+
+/* petal burst on full bouquet */
+function petalBurst(){
+  const colors = ["#E8B4B8","#D97C5A","#9CAF88","#E8B84B","#A48BC4"];
+  for(let i=0;i<26;i++){
+    const el = document.createElementNS("http://www.w3.org/2000/svg","svg");
+    el.setAttribute("viewBox","0 0 20 26");
+    const sz = 12+Math.random()*12;
+    el.setAttribute("width",sz); el.setAttribute("height",sz*1.3);
+    el.innerHTML = `<use href="#petal-shape" fill="${colors[i%5]}"/>`;
+    Object.assign(el.style,{position:"fixed",left:Math.random()*100+"vw",top:"-30px",zIndex:170,pointerEvents:"none",
+      animation:`drift ${5+Math.random()*5}s linear ${Math.random()*1.5}s forwards`});
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(),12000);
+  }
+}
+
+/* bloom-in keyframes injected */
+const st = document.createElement("style");
+st.textContent = "@keyframes bloomIn{from{opacity:0;transform-origin:center;scale:.2}to{opacity:1}}";
+document.head.appendChild(st);
+
+/* ================= GUIDE BUTTERFLY ================= */
+/* One butterfly that gracefully leads the visitor down the page:
+   it glides along a gentle S-curve as you scroll, and hovers in place when you pause. */
+(function(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const b = document.createElement("div");
+  b.className = "guide-butterfly";
+  b.setAttribute("aria-hidden","true");
+  b.innerHTML = `<svg viewBox="0 0 34 30" width="46" height="40"><g class="wings"><path d="M17,15 C10,2 0,4 2,12 C3,18 10,18 17,15Z" fill="#A48BC4"/><path d="M17,15 C24,2 34,4 32,12 C31,18 24,18 17,15Z" fill="#A48BC4"/><path d="M17,15 C11,26 3,27 4,20 C5,16 11,15 17,15Z" fill="#8A6DB0"/><path d="M17,15 C23,26 31,27 30,20 C29,16 23,15 17,15Z" fill="#8A6DB0"/></g><ellipse cx="17" cy="15" rx="1.6" ry="6" fill="#4A4238"/></svg>`;
+  document.body.appendChild(b);
+  let x = innerWidth*0.72, y = 150, t = 0;
+  function targetPoint(){
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = max > 0 ? scrollY / max : 0;           // 0 → 1 through the site
+    /* meander left–right AND top–bottom so it visits every section as you scroll */
+    const tx = innerWidth  * (0.5  + 0.37 * Math.sin(p * Math.PI * 4.2 + 0.8));
+    const ty = innerHeight * (0.14 + 0.52 * (0.5 + 0.5 * Math.sin(p * Math.PI * 5.6 - 1.2)));
+    return [tx, ty];
+  }
+  function tick(){
+    t += 0.016;
+    const [tx, ty] = targetPoint();
+    /* hover bob layered on top of the scroll path */
+    const hx = tx + 16 * Math.sin(t * 1.1);
+    const hy = ty + 11 * Math.sin(t * 1.9) + 4 * Math.sin(t * 3.3);
+    const dx = hx - x, dy = hy - y;
+    x += dx * 0.04; y += dy * 0.04;                  // smooth chase, no jitter
+    const tilt = Math.max(-26, Math.min(26, dx * 0.25));
+    b.style.transform = `translate(${x}px, ${y}px) rotate(${tilt}deg)`;
+    requestAnimationFrame(tick);
+  }
+  tick();
+})();
+
+/* ================= FOOTER GRASS FIELD ================= */
+(function(){
+  const svg = document.getElementById("grassSvg");
+  if(!svg) return;
+  const greens = ["#3E5F50","#4E7060","#5F8268","#6E9377","#87A98C"];
+  let s = "";
+  const rnd = (a,b)=>a+Math.random()*(b-a);
+  for(let i=0;i<55;i++){
+    const x = rnd(0,1440), h = rnd(22,64), lean = rnd(-9,9), c = greens[Math.floor(rnd(0,greens.length))];
+    s += `<g class="gb" style="--ox:${x.toFixed(0)}px;--dur:${rnd(3.2,6).toFixed(2)}s;--del:${(-rnd(0,6)).toFixed(2)}s">
+      <path d="M${x},90 C${x+lean*0.3},${90-h*0.5} ${x+lean},${90-h*0.8} ${x+lean*1.6},${90-h}" stroke="${c}" stroke-width="${rnd(2,3.6).toFixed(1)}" fill="none" stroke-linecap="round" opacity="${rnd(.55,.95).toFixed(2)}"/>
+    </g>`;
+  }
+  /* a few flowers peeking through the grass */
+  [["fl-poppy",180],["fl-daisy",480],["fl-cornflower",760],["fl-tulip",1040],["fl-forgetmenot",1300]].forEach(([f,x],i)=>{
+    const sc = rnd(.2,.28);
+    s += `<g class="gb" style="--ox:${x}px;--dur:${rnd(4,6).toFixed(2)}s;--del:${(-rnd(0,5)).toFixed(2)}s" opacity=".9">
+      <path d="M${x},90 C${x},76 ${x},66 ${x},56" stroke="#5F8268" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <g transform="translate(${x},52) scale(${sc.toFixed(2)}) translate(-50,-50)"><use href="#${f}"/></g>
+    </g>`;
+  });
+  svg.innerHTML = s;
+})();
+
+/* ---- pause off-screen decorative animation ---- */
+(function(){
+  const io = new IntersectionObserver(es=>{
+    es.forEach(e=>e.target.classList.toggle("anim-idle", !e.isIntersecting));
+  },{rootMargin:"120px"});
+  ["#top","#contact"].forEach(sel=>{ const el=document.querySelector(sel); if(el) io.observe(el); });
+})();
+
+/* ================= HERO ROTATOR ================= */
+(function(){
+  const words=[
+    "getting shortlisted by Popeyes UK's digital team 🍗",
+    "shipping a 90.7%-satisfaction fan platform at Sky Sports ⚽",
+    "proving touch builds trust in VR, p<0.001 🥽",
+    "publishing mental-health research internationally 📄",
+    "lifting task completion by 40% through testing ⚡"
+  ];
+  let i=0; const el=document.getElementById("rotWord");
+  if(el) setInterval(()=>{ if(document.hidden || el.closest("header").classList.contains("anim-idle")) return; i=(i+1)%words.length; el.textContent=words[i]; el.classList.remove("flip"); void el.offsetWidth; el.classList.add("flip"); },3400);
+})();
+
+/* ================= INIT ================= */
+$("#toastClose").onclick = hideToast;
+addEventListener("scroll", toastScrollCheck, {passive:true});
+$("#sheet").addEventListener("scroll", toastScrollCheck, {passive:true});
+renderBouquet();
+renderProgress();
+</script>
+<!-- Vercel Web Analytics: privacy-friendly, no cookies, no consent banner needed.
+     Does nothing until the site is deployed on Vercel and Analytics is switched on. -->
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
