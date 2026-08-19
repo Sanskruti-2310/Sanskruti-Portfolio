@@ -45,7 +45,7 @@
 html{scroll-behavior:smooth;}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.65;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:rgba(95,127,91,.18);-webkit-font-smoothing:antialiased;}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:-0.01em;margin:0;}
-img{max-width:100%;}
+img{max-width:100%;height:auto;}
 a{color:inherit;}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
 
@@ -222,12 +222,25 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:
 .cs-note{background:var(--cream-2);border-left:3px solid var(--sage);border-radius:0 10px 10px 0;padding:10px 16px;font-size:13.5px !important;color:var(--ink-soft) !important;}
 .cs-sec ul{margin:0 0 12px;padding-left:20px;font-size:15.5px;color:#413d33;}
 .cs-sec li{margin-bottom:6px;}
-.cs-img{border-radius:16px;border:1px solid var(--line);margin:16px 0;display:block;background:#fff;width:100%;}
+.cs-img{border-radius:16px;border:1px solid var(--line);margin:16px 0;display:block;background:#fff;width:100%;height:auto;cursor:zoom-in;}
 .cs-fig{margin:22px 0;}
 .cs-fig img{margin-bottom:8px;}
 .cs-fig figcaption{font-size:12.5px;color:var(--ink-soft);line-height:1.55;padding-left:14px;border-left:2px solid var(--sage);}
-.cs-img-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0;}
-.cs-img-row img{border-radius:14px;border:1px solid var(--line);width:100%;height:100%;object-fit:cover;background:#fff;}
+.cs-fig{position:relative;}
+.zoom-hint{position:absolute;top:26px;right:12px;background:rgba(43,43,36,.72);color:#fff;font-size:11px;font-weight:600;padding:5px 11px;border-radius:100px;pointer-events:none;opacity:0;transition:opacity .25s;}
+.cs-fig:hover .zoom-hint{opacity:1;}
+@media(pointer:coarse){.zoom-hint{opacity:1;}}
+/* full-screen image viewer, so dense research artefacts are actually readable */
+.lightbox{position:fixed;inset:0;z-index:300;background:rgba(24,26,24,.94);display:none;align-items:center;justify-content:center;padding:0;overflow:auto;-webkit-overflow-scrolling:touch;}
+.lightbox.open{display:flex;}
+.lightbox img{display:block;margin:auto;max-width:96vw;max-height:94vh;width:auto;height:auto;border-radius:6px;cursor:zoom-in;}
+.lightbox.actual{align-items:flex-start;justify-content:flex-start;}
+.lightbox.actual img{max-width:none;max-height:none;width:auto;cursor:zoom-out;border-radius:0;}
+.lb-close{position:fixed;top:16px;right:16px;z-index:310;background:rgba(255,255,255,.95);border:none;border-radius:100px;padding:10px 18px;font-family:var(--sans);font-size:13px;font-weight:700;color:var(--ink);cursor:pointer;}
+.lb-cap{position:fixed;left:0;right:0;bottom:0;z-index:310;background:linear-gradient(transparent,rgba(20,22,20,.92));color:#EDE9DC;font-size:12.5px;line-height:1.5;padding:32px 22px 18px;text-align:center;pointer-events:none;}
+@media(max-width:640px){.lb-cap{font-size:11.5px;padding:26px 14px 14px;}}
+.cs-img-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0;align-items:start;}
+.cs-img-row img{border-radius:14px;border:1px solid var(--line);width:100%;height:auto;background:#fff;cursor:zoom-in;}
 .methods{display:flex;gap:9px;flex-wrap:wrap;margin-top:6px;}
 .methods span{background:var(--card);border:1px solid var(--sage);border-radius:100px;padding:6px 14px;font-size:12.5px;font-weight:600;color:var(--green);}
 /* research deep dive */
@@ -861,6 +874,12 @@ footer .foot-bottom{position:relative;z-index:3;}
 
 <div class="toast" id="toast"><div class="t-ic" id="toastIc">🌸</div><div class="t-txt"><b id="toastTitle"></b><span id="toastMsg"></span></div><button class="t-close" id="toastClose" aria-label="Dismiss">✕</button></div>
 
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="lb-close" id="lbClose">Close ✕</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
 <div class="celebrate" id="celebrate">
   <div class="celebrate-card">
     <div class="big-bouquet"><svg id="celebSvg" viewBox="0 0 220 180" width="220" height="180"></svg></div>
@@ -1379,6 +1398,13 @@ function openCase(key){
         </button>
       </div>`;
     })()}`;
+  /* dense research artefacts need an obvious "you can read this properly" affordance */
+  document.querySelectorAll("#sheetInner .cs-fig").forEach(f=>{
+    if(f.querySelector(".zoom-hint")) return;
+    const s = document.createElement("span");
+    s.className = "zoom-hint"; s.textContent = "⤢ click to enlarge";
+    f.appendChild(s);
+  });
   if(c.embeds) mountEmbeds(c);
   if(!$("#overlay").classList.contains("open")) lockScroll();
   $("#overlay").classList.add("open");
@@ -1424,6 +1450,40 @@ document.querySelectorAll(".case-card").forEach(el=>{
   el.addEventListener("click",()=>openCase(el.dataset.case));
   el.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); openCase(el.dataset.case);} });
 });
+
+/* ---- click any research artefact to read it full size ---- */
+(function(){
+  const lb = $("#lightbox"), img = $("#lbImg"), cap = $("#lbCap");
+  function open(src, alt, caption){
+    img.src = src; img.alt = alt || "";
+    cap.textContent = caption || "";
+    cap.style.display = caption ? "" : "none";
+    lb.classList.remove("actual");
+    lb.classList.add("open");
+    lb.scrollTop = 0; lb.scrollLeft = 0;
+  }
+  function close(){ lb.classList.remove("open","actual"); img.src = ""; }
+  /* delegate, because case-study markup is rendered on the fly */
+  document.addEventListener("click", e=>{
+    const t = e.target;
+    if(t.tagName === "IMG" && (t.classList.contains("cs-img") || t.closest(".cs-img-row"))){
+      const fig = t.closest("figure");
+      open(t.currentSrc || t.src, t.alt, fig ? (fig.querySelector("figcaption")||{}).textContent : t.alt);
+    }
+  });
+  img.addEventListener("click", e=>{
+    e.stopPropagation();
+    /* toggle between fit-to-screen and true size, so fine print is legible */
+    lb.classList.toggle("actual");
+    if(lb.classList.contains("actual")){
+      lb.scrollLeft = (img.naturalWidth - lb.clientWidth)/2;
+      lb.scrollTop  = Math.max(0,(img.naturalHeight - lb.clientHeight)/4);
+    }
+  });
+  $("#lbClose").addEventListener("click", close);
+  lb.addEventListener("click", e=>{ if(e.target === lb) close(); });
+  addEventListener("keydown", e=>{ if(e.key === "Escape" && lb.classList.contains("open")){ e.stopPropagation(); close(); } }, true);
+})();
 
 /* ================= BOUQUET ================= */
 const ORDER = ["popeyes","sky","breezle","vr","dementia"];
