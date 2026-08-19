@@ -1684,5 +1684,12 @@ renderProgress();
 <!-- Vercel Web Analytics: privacy-friendly, no cookies, no consent banner needed.
      Does nothing until the site is deployed on Vercel and Analytics is switched on. -->
 <script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Vercel Speed Insights: automatically collects Core Web Vitals and performance metrics.
+     Works seamlessly once Speed Insights is enabled in your Vercel dashboard. -->
+<script>
+  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
