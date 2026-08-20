@@ -1,0 +1,15 @@
+{
+  "name": "sanskruti-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Sanskruti Pawase - UX/UI and Brand Designer",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static HTML site - no build required'",
+    "lint": "npx htmlhint index.html"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.15"
+  },
+  "devDependencies": {}
+}
